@@ -2,24 +2,22 @@ package ml.alessiomanai.streamingtv.canali;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ml.alessiomanai.streamingtv.R;
 
-public class TgrSardegna extends AppCompatActivity {
+public class RsiLa2 extends AppCompatActivity {
 
-    String URL = "https://www.rainews.it/tgr/sardegna/notiziari/index.html?/tgr/rainews.html";
+    String URL = "https://www.open-live.org/it/rsi-la-2-diretta-italia-estero/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tgr_sardegna);
+        setContentView(R.layout.activity_rsi_la2);
 
-        WebView finestra = findViewById(R.id.tgrsardegna);
+        WebView finestra = findViewById(R.id.rsila2canale);
 
         finestra.getSettings().setJavaScriptEnabled(true);
         finestra.getSettings().setLoadsImagesAutomatically(true);
@@ -27,13 +25,13 @@ public class TgrSardegna extends AppCompatActivity {
             @Override
             public void onPageFinished(WebView view, String url)
             {
-                view.loadUrl("javascript:(function() { " +
-                        "document.getElementsByClassName('as-oil-content-overlay')[0].style.display='none'; " +
-                        "document.getElementsByClassName('blocco TGR-TELECOMANDO')[0].style.display='none'; " +
-                        "document.getElementsByClassName('blocco ARCHIVIO')[0].style.display='none'; " +
-                        "document.getElementsByClassName('slim')[0].style.display='none'; " +
+                /*view.loadUrl("javascript:(function() { " +
+                        "document.getElementsByClassName('sc-dnqmqq fQAqln qc-cmp-cleanslate')[0].style.display='none'; " +
+                        "document.getElementsByClassName('widget_custom_html')[0].style.display='none'; " +
+                        "document.getElementsByClassName('cactus-sidebar')[0].style.display='none'; " +
+                        "document.document.getElementById('header-navigation').style.display='none'; " +
                         "})()");
-            }
+            */}
         });
 
         finestra.setHorizontalScrollBarEnabled(true);

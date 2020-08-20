@@ -36,6 +36,30 @@
             >
         </Button>
 
+        <Button
+            android:id="@+id/canale5button"
+            android:text="Canale 5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/rsila2button"
+            android:text="Rsi La2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/tv8button"
+            android:text="TV8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
