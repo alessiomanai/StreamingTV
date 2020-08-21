@@ -1,6 +1,8 @@
 # Streaming TV  #
 ## Parser per vedere alcuni canali della TV in streaming 
 
+SourceForge: https://streaming-tv-italia.sourceforge.io/
+
 	Copyright (C) 2020  Alessio Manai
 
  	This program is free software: you can redistribute it and/or modify
