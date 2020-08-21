@@ -9,6 +9,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ml.alessiomanai.streamingtv.R;
+import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
 public class FoodNetwork extends AppCompatActivity {
 
@@ -21,8 +22,7 @@ public class FoodNetwork extends AppCompatActivity {
 
         WebView finestra = findViewById(R.id.foodnetwork);
 
-        finestra.getSettings().setJavaScriptEnabled(true);
-        finestra.getSettings().setLoadsImagesAutomatically(true);
+        WebViewSettings.doSettings(finestra);
         finestra.setWebViewClient(new WebViewClient(){
               @Override
               public void onPageFinished(WebView view, String url)
@@ -32,9 +32,6 @@ public class FoodNetwork extends AppCompatActivity {
                           "})()");
               }
         });
-
-        finestra.setHorizontalScrollBarEnabled(true);
-        finestra.setVerticalScrollBarEnabled(true);
 
         finestra.loadUrl(this.URL);
 

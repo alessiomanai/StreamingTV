@@ -7,6 +7,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ml.alessiomanai.streamingtv.R;
+import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
 public class Canale5 extends AppCompatActivity {
 
@@ -19,12 +20,8 @@ public class Canale5 extends AppCompatActivity {
 
         WebView finestra = findViewById(R.id.canalecinque);
 
-        finestra.getSettings().setJavaScriptEnabled(true);
-        finestra.getSettings().setLoadsImagesAutomatically(true);
+        WebViewSettings.doSettings(finestra);
         finestra.setWebViewClient(new WebViewClient());
-
-        finestra.setHorizontalScrollBarEnabled(true);
-        finestra.setVerticalScrollBarEnabled(true);
 
         finestra.loadUrl(this.URL);
 
