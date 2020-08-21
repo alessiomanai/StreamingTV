@@ -10,7 +10,7 @@ import ml.alessiomanai.streamingtv.R;
 
 public class RsiLa2 extends AppCompatActivity {
 
-    String URL = "https://www.open-live.org/it/rsi-la-2-diretta-italia-estero/";
+    String URL = "https://ok.ru/video/1829307424484";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
