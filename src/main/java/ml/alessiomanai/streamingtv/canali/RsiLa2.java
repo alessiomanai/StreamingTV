@@ -10,7 +10,7 @@ import ml.alessiomanai.streamingtv.R;
 
 public class RsiLa2 extends AppCompatActivity {
 
-    String URL = "https://ok.ru/video/1829307424484";
+    String URL = "http://alethelegend.altervista.org/streaming/rsila2.html";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,18 +21,7 @@ public class RsiLa2 extends AppCompatActivity {
 
         finestra.getSettings().setJavaScriptEnabled(true);
         finestra.getSettings().setLoadsImagesAutomatically(true);
-        finestra.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url)
-            {
-                /*view.loadUrl("javascript:(function() { " +
-                        "document.getElementsByClassName('sc-dnqmqq fQAqln qc-cmp-cleanslate')[0].style.display='none'; " +
-                        "document.getElementsByClassName('widget_custom_html')[0].style.display='none'; " +
-                        "document.getElementsByClassName('cactus-sidebar')[0].style.display='none'; " +
-                        "document.document.getElementById('header-navigation').style.display='none'; " +
-                        "})()");
-            */}
-        });
+        finestra.setWebViewClient(new WebViewClient());
 
         finestra.setHorizontalScrollBarEnabled(true);
         finestra.setVerticalScrollBarEnabled(true);
