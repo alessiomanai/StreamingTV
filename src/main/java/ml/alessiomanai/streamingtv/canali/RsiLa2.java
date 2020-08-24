@@ -23,6 +23,7 @@ public class RsiLa2 extends AppCompatActivity {
         WebViewSettings.doSettings(finestra);
         finestra.setWebViewClient(new WebViewClient());
 
-        finestra.loadUrl(this.URL);
+        String html = "<html><body><div style=\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.0081%;\"><iframe src=\"https://ok.ru/videoembed/1840647708388?autoplay=1\" style=\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\" allowfullscreen scrolling=\"no\" allow=\"encrypted-media\" ></iframe></div></body></html>";
+        finestra.loadData(html, "text/html", null);
     }
 }
