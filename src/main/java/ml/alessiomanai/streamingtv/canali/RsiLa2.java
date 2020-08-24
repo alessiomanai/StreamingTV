@@ -11,8 +11,6 @@ import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
 public class RsiLa2 extends AppCompatActivity {
 
-    String URL = "http://alethelegend.altervista.org/streaming/rsila2.html";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
