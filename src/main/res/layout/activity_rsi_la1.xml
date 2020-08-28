@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".canali.RsiLa1">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <WebView
+            android:id="@+id/rsila1canale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </WebView>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

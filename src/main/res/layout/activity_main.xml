@@ -45,6 +45,14 @@
         </Button>
 
         <Button
+            android:id="@+id/rsila1button"
+            android:text="Rsi La1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </Button>
+
+        <Button
             android:id="@+id/rsila2button"
             android:text="Rsi La2"
             android:layout_width="match_parent"

@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import ml.alessiomanai.streamingtv.canali.Canale5;
 import ml.alessiomanai.streamingtv.canali.FoodNetwork;
+import ml.alessiomanai.streamingtv.canali.RsiLa1;
 import ml.alessiomanai.streamingtv.canali.RsiLa2;
 import ml.alessiomanai.streamingtv.canali.TgrSardegna;
 import ml.alessiomanai.streamingtv.canali.Tv8;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button tgrSardegna;
     Button videolina;
     Button canale5;
+    Button rsiLa1;
     Button rsiLa2;
     Button tv8;
 
@@ -32,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         tgrSardegna = findViewById(R.id.tgrButton);
         videolina = findViewById(R.id.videolinaButton);
         canale5 = findViewById(R.id.canale5button);
+        rsiLa1 = findViewById(R.id.rsila1button);
         rsiLa2 = findViewById(R.id.rsila2button);
         tv8 = findViewById(R.id.tv8button);
 
@@ -75,6 +78,17 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent canale5Web = new Intent(getBaseContext(), Canale5.class);
                 startActivity(canale5Web);
+
+            }
+        });
+
+        rsiLa1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent rsiLa1web = new Intent(getBaseContext(), RsiLa1.class);
+                startActivity(rsiLa1web);
 
             }
         });
