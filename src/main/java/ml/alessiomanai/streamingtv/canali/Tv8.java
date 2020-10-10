@@ -7,11 +7,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ml.alessiomanai.streamingtv.R;
+import ml.alessiomanai.streamingtv.utils.M3u8Reader;
 import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
 public class Tv8 extends AppCompatActivity {
 
-    String URL = "https://tv8.it/streaming.html";
+    private String URL = "https://www.mytivu.it/Application/Channels/TV8.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,16 +22,9 @@ public class Tv8 extends AppCompatActivity {
         WebView finestra = findViewById(R.id.tv8canale);
 
         WebViewSettings.doSettings(finestra);
-        finestra.setWebViewClient(new WebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url)
-            {
-                view.loadUrl("javascript:(function() { " +
-                        "document.getElementById('bannerprivacy').style.display='none'; " +
-                        "})()");
-            }
-        });
+        finestra.setWebViewClient(new WebViewClient());
 
-        finestra.loadUrl(this.URL);
+        String html = M3u8Reader.getHtmlReader(URL);
+        finestra.loadData(html, "text/html", null);
     }
 }
