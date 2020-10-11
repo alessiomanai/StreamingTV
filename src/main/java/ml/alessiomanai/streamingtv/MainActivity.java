@@ -9,9 +9,12 @@ import android.widget.Button;
 
 import ml.alessiomanai.streamingtv.canali.Canale5;
 import ml.alessiomanai.streamingtv.canali.FoodNetwork;
+import ml.alessiomanai.streamingtv.canali.Giallo;
+import ml.alessiomanai.streamingtv.canali.Italia1;
 import ml.alessiomanai.streamingtv.canali.RsiLa1;
 import ml.alessiomanai.streamingtv.canali.RsiLa2;
 import ml.alessiomanai.streamingtv.canali.TgrSardegna;
+import ml.alessiomanai.streamingtv.canali.TopCrime;
 import ml.alessiomanai.streamingtv.canali.Tv8;
 import ml.alessiomanai.streamingtv.canali.Videolina;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     Button rsiLa1;
     Button rsiLa2;
     Button tv8;
+    Button italia1;
+    Button topcrime;
+    Button giallo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
         rsiLa1 = findViewById(R.id.rsila1button);
         rsiLa2 = findViewById(R.id.rsila2button);
         tv8 = findViewById(R.id.tv8button);
+        italia1 = findViewById(R.id.italia1button);
+        topcrime = findViewById(R.id.topcrimebutton);
+        giallo = findViewById(R.id.giallobutton);
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,5 +124,38 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        italia1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent italia1web = new Intent(getBaseContext(), Italia1.class);
+                startActivity(italia1web);
+
+            }
+        });
+
+        topcrime.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent topcrimeweb = new Intent(getBaseContext(), TopCrime.class);
+                startActivity(topcrimeweb);
+
+            }
+        });
+
+        giallo.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent gialloweb = new Intent(getBaseContext(), Giallo.class);
+                startActivity(gialloweb);
+
+            }
+        });
     }
 }

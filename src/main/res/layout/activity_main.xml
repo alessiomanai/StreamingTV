@@ -6,68 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/videolinaButton"
-            android:text="Videolina"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/tgrButton"
-            android:text="TGR Sardegna "
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/videolinaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Videolina"></Button>
 
-        <Button
-            android:id="@+id/foodnetworkButton"
-            android:text="FoodNetwork"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/tgrButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TGR Sardegna "></Button>
 
-        <Button
-            android:id="@+id/canale5button"
-            android:text="Canale 5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/foodnetworkButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FoodNetwork"></Button>
 
-        <Button
-            android:id="@+id/rsila1button"
-            android:text="Rsi La1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/canale5button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canale 5"></Button>
 
-        <Button
-            android:id="@+id/rsila2button"
-            android:text="Rsi La2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/rsila1button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rsi La1"></Button>
 
-        <Button
-            android:id="@+id/tv8button"
-            android:text="TV8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
-        </Button>
+            <Button
+                android:id="@+id/rsila2button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rsi La2"></Button>
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/tv8button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TV8"></Button>
+
+            <Button
+                android:id="@+id/italia1button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italia 1"></Button>
+
+            <Button
+                android:id="@+id/topcrimebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Crime"></Button>
+
+            <Button
+                android:id="@+id/giallobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giallo"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

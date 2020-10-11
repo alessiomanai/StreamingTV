@@ -9,11 +9,12 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import ml.alessiomanai.streamingtv.R;
+import ml.alessiomanai.streamingtv.utils.M3u8Reader;
 import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
 public class FoodNetwork extends AppCompatActivity {
 
-    String URL = "https://it.dplay.com/food-network/";
+    private String URL = "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_6@1000854/master.m3u8?hdnts=st=1586086849~exp=1586173249~acl=/i/*~hmac=49ca8a624a617228910e6a0b491ab25e78ea7ab08c404c6800fc366e15a03146&mux_audio=true";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,19 +22,11 @@ public class FoodNetwork extends AppCompatActivity {
         setContentView(R.layout.activity_food_network);
 
         WebView finestra = findViewById(R.id.foodnetwork);
-
         WebViewSettings.doSettings(finestra);
-        finestra.setWebViewClient(new WebViewClient(){
-              @Override
-              public void onPageFinished(WebView view, String url)
-              {
-                  view.loadUrl("javascript:(function() { " +
-                          "document.getElementsByClassName('e-cookies')[0].style.display='none'; " +
-                          "})()");
-              }
-        });
+        finestra.setWebViewClient(new WebViewClient());
 
-        finestra.loadUrl(this.URL);
+        String html = M3u8Reader.getHtmlReader(URL);
+        finestra.loadData(html, "text/html", null);
 
     }
 }
