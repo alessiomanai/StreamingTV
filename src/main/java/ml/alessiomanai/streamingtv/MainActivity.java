@@ -11,6 +11,7 @@ import ml.alessiomanai.streamingtv.canali.Canale5;
 import ml.alessiomanai.streamingtv.canali.FoodNetwork;
 import ml.alessiomanai.streamingtv.canali.Giallo;
 import ml.alessiomanai.streamingtv.canali.Italia1;
+import ml.alessiomanai.streamingtv.canali.Rai2;
 import ml.alessiomanai.streamingtv.canali.RsiLa1;
 import ml.alessiomanai.streamingtv.canali.RsiLa2;
 import ml.alessiomanai.streamingtv.canali.TgrSardegna;
