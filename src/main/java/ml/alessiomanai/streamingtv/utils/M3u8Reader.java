@@ -5,7 +5,7 @@ public class M3u8Reader {
     public static String getHtmlReader(String url){
 
         return "<html>\n" +
-                "  <body>\n" +
+                "  <body style="margin: 0; padding: 0;">\n" +
                 "    <script src=\"https://cdn.jsdelivr.net/npm/hls.js@latest\"></script>\n" +
                 "    <video id=\"video\" controls style=\"width: 100%    !important; height: 100%   !important;\"></video>\n" +
                 "    <script>\n" +
