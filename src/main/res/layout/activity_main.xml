@@ -16,10 +16,34 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/canale5button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canale 5"></Button>
+
+            <Button
+                android:id="@+id/italia1button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italia 1"></Button>
+
+            <Button
+                android:id="@+id/rete4button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rete 4"></Button>
+
+            <Button
                 android:id="@+id/videolinaButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Videolina"></Button>
+
+            <Button
+                android:id="@+id/tv8button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TV8"></Button>
 
             <Button
                 android:id="@+id/tgrButton"
@@ -34,10 +58,70 @@
                 android:text="FoodNetwork"></Button>
 
             <Button
-                android:id="@+id/canale5button"
+                android:id="@+id/topcrimebutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Canale 5"></Button>
+                android:text="Top Crime"></Button>
+
+            <Button
+                android:id="@+id/mediasetExtrabutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mediaset Extra"></Button>
+
+            <Button
+                android:id="@+id/mediaset20button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mediaset 20"></Button>
+
+            <Button
+                android:id="@+id/italia2button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Italia 2"></Button>
+
+            <Button
+                android:id="@+id/la5button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La 5"></Button>
+
+            <Button
+                android:id="@+id/giallobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giallo"></Button>
+
+            <Button
+                android:id="@+id/motorTrendbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Motor Trend"></Button>
+
+            <Button
+                android:id="@+id/realTimebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Real Time"></Button>
+
+            <Button
+                android:id="@+id/cieloButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cielo"></Button>
+
+            <Button
+                android:id="@+id/dmaxButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DMax"></Button>
+
+            <Button
+                android:id="@+id/noveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nove"></Button>
 
             <Button
                 android:id="@+id/rsila1button"
@@ -50,30 +134,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rsi La2"></Button>
-
-            <Button
-                android:id="@+id/tv8button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TV8"></Button>
-
-            <Button
-                android:id="@+id/italia1button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Italia 1"></Button>
-
-            <Button
-                android:id="@+id/topcrimebutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Top Crime"></Button>
-
-            <Button
-                android:id="@+id/giallobutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Giallo"></Button>
 
         </LinearLayout>
 
