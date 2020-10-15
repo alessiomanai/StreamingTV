@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     Button topcrime;
     Button giallo;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, cielo, dMax, nove;
+    Button iris, focus, boing, cartoonito, paramountChannel, tgcom24, skytg24, spyke;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
         cielo = findViewById(R.id.cieloButton);
         dMax = findViewById(R.id.dmaxButton);
         nove = findViewById(R.id.noveButton);
+        iris = findViewById(R.id.irisbutton);
+        focus = findViewById(R.id.focusbutton);
+        boing = findViewById(R.id.boingbutton);
+        cartoonito = findViewById(R.id.cartoonitobutton);
+        paramountChannel = findViewById(R.id.paramountChannelbutton);
+        tgcom24 = findViewById(R.id.tgcom24button);
+        skytg24 = findViewById(R.id.skyTg24button);
+        spyke = findViewById(R.id.spikebutton);
+
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -300,5 +310,58 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        paramountChannel.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","http://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@195657/index_2500_av-p.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        boing.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kb)/index.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        cartoonito.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(la)/index.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        spyke.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@829515/master.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
     }
 }

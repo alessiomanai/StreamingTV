@@ -88,6 +88,55 @@
                 android:text="La 5"></Button>
 
             <Button
+                android:id="@+id/irisbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Iris"></Button>
+
+            <Button
+                android:id="@+id/focusbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Focus"></Button>
+
+            <Button
+                android:id="@+id/cartoonitobutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cartoonito"></Button>
+
+            <Button
+                android:id="@+id/boingbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Boing"></Button>
+
+            <Button
+                android:id="@+id/paramountChannelbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paramount Channel"></Button>
+
+            <Button
+                android:id="@+id/tgcom24button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TgCom24"></Button>
+
+            <Button
+                android:id="@+id/skyTg24button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sky TG 24"></Button>
+
+            <Button
+                android:id="@+id/spikebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spike"></Button>
+
+
+            <Button
                 android:id="@+id/giallobutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
