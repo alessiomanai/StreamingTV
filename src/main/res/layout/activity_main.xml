@@ -118,6 +118,12 @@
                 android:text="Paramount Channel"></Button>
 
             <Button
+                android:id="@+id/cine34button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cine34"></Button>
+
+            <Button
                 android:id="@+id/tgcom24button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -171,6 +177,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nove"></Button>
+
+            <Button
+                android:id="@+id/k2button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="K2"></Button>
+
+            <Button
+                android:id="@+id/frisbeebutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Frisbee"></Button>
 
             <Button
                 android:id="@+id/rsila1button"
