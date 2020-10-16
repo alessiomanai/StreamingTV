@@ -425,8 +425,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://www.mytivu.it/Application/Channels/K2.php");
-                //intent.putExtra("URL","https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8");
+                intent.putExtra("URL","https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8");
                 startActivity(intent);
 
             }

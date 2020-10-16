@@ -1,5 +1,17 @@
 # Streaming TV  #
-## Parser per vedere alcuni canali della TV in streaming 
+## Applicazione per FireTV per vedere i canali italiani tramite internet
+
+Alcuni canali disponibili:
+- Canale 5
+- Italia 1
+- Nove
+- TV 8
+- FoodNetwork
+- MotorTrend
+- DMax
+- Cielo
+
+L'Applicazione è disponibile per tutti i dispositivi Android e Fire TV a partire dalla versione Lollipop 5
 
 SourceForge: https://streaming-tv-italia.sourceforge.io/
 
