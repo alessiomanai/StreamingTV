@@ -15,192 +15,359 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/canale5button"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Canale 5"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/italia1button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Italia 1"></Button>
+                <Button
+                    android:id="@+id/canale5button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Canale 5"></Button>
 
-            <Button
-                android:id="@+id/rete4button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rete 4"></Button>
+                <Button
+                    android:id="@+id/italia1button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Italia 1"></Button>
 
-            <Button
-                android:id="@+id/videolinaButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Videolina"></Button>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/tv8button"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TV8"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/tgrButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TGR Sardegna "></Button>
+                <Button
+                    android:id="@+id/rete4button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rete 4"></Button>
 
-            <Button
-                android:id="@+id/foodnetworkButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="FoodNetwork"></Button>
+                <Button
+                    android:id="@+id/videolinaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Videolina"></Button>
 
-            <Button
-                android:id="@+id/topcrimebutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Top Crime"></Button>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/mediasetExtrabutton"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mediaset Extra"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/mediaset20button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mediaset 20"></Button>
-
-            <Button
-                android:id="@+id/italia2button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Italia 2"></Button>
-
-            <Button
-                android:id="@+id/la5button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="La 5"></Button>
-
-            <Button
-                android:id="@+id/irisbutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Iris"></Button>
-
-            <Button
-                android:id="@+id/focusbutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Focus"></Button>
-
-            <Button
-                android:id="@+id/cartoonitobutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cartoonito"></Button>
-
-            <Button
-                android:id="@+id/boingbutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Boing"></Button>
-
-            <Button
-                android:id="@+id/paramountChannelbutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Paramount Channel"></Button>
-
-            <Button
-                android:id="@+id/cine34button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cine34"></Button>
-
-            <Button
-                android:id="@+id/tgcom24button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TgCom24"></Button>
-
-            <Button
-                android:id="@+id/skyTg24button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sky TG 24"></Button>
-
-            <Button
-                android:id="@+id/spikebutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Spike"></Button>
+                <Button
+                    android:id="@+id/tv8button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TV8"></Button>
 
 
-            <Button
-                android:id="@+id/giallobutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Giallo"></Button>
+                <Button
+                    android:id="@+id/foodnetworkButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FoodNetwork"></Button>
 
-            <Button
-                android:id="@+id/motorTrendbutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Motor Trend"></Button>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/realTimebutton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Real Time"></Button>
 
-            <Button
-                android:id="@+id/cieloButton"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cielo"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/dmaxButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="DMax"></Button>
+                <Button
+                    android:id="@+id/topcrimebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Top Crime"></Button>
 
-            <Button
-                android:id="@+id/noveButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nove"></Button>
+                <Button
+                    android:id="@+id/mediasetExtrabutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mediaset Extra"></Button>
 
-            <Button
-                android:id="@+id/k2button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="K2"></Button>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/frisbeebutton"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Frisbee"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/rsila1button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rsi La1"></Button>
+                <Button
+                    android:id="@+id/mediaset20button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mediaset 20"></Button>
 
-            <Button
-                android:id="@+id/rsila2button"
+                <Button
+                    android:id="@+id/italia2button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Italia 2"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Rsi La2"></Button>
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/la5button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="La 5"></Button>
+
+                <Button
+                    android:id="@+id/irisbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Iris"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/focusbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Focus"></Button>
+
+                <Button
+                    android:id="@+id/cartoonitobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cartoonito"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/boingbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Boing"></Button>
+
+                <Button
+                    android:id="@+id/paramountChannelbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Paramount Channel"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cine34button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cine34"></Button>
+
+                <Button
+                    android:id="@+id/tgcom24button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TgCom24"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/skyTg24button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sky TG 24"></Button>
+
+                <Button
+                    android:id="@+id/spikebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Spike"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/giallobutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Giallo"></Button>
+
+                <Button
+                    android:id="@+id/motorTrendbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Motor Trend"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/realTimebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Real Time"></Button>
+
+                <Button
+                    android:id="@+id/cieloButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cielo"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dmaxButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DMax"></Button>
+
+                <Button
+                    android:id="@+id/noveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nove"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/k2button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="K2"></Button>
+
+                <Button
+                    android:id="@+id/frisbeebutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Frisbee"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/superButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Super" />
+
+                <Button
+                    android:id="@+id/radioItaliaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Radio Italia" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/rsila1button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rsi La1"></Button>
+
+                <Button
+                    android:id="@+id/rsila2button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Rsi La2"></Button>
+
+            </LinearLayout>
 
         </LinearLayout>
 

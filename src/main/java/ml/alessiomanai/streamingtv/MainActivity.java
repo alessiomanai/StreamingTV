@@ -23,7 +23,7 @@ import ml.alessiomanai.streamingtv.canali.Videolina;
 public class MainActivity extends AppCompatActivity {
 
     Button foodNetwork;
-    Button tgrSardegna;
+    Button radioItaliaTv;
     Button videolina;
     Button canale5;
     Button rsiLa1;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     Button tv8;
     Button italia1;
     Button topcrime;
-    Button giallo;
+    Button giallo, superTv;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, cielo, dMax, nove;
     Button iris, focus, boing, cartoonito, paramountChannel, tgcom24, skytg24, spyke, cine34, k2, frisbee;
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         foodNetwork = findViewById(R.id.foodnetworkButton);
-        tgrSardegna = findViewById(R.id.tgrButton);
+        radioItaliaTv = findViewById(R.id.radioItaliaButton);
         videolina = findViewById(R.id.videolinaButton);
         canale5 = findViewById(R.id.canale5button);
         rsiLa1 = findViewById(R.id.rsila1button);
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
         cine34 = findViewById(R.id.cine34button);
         k2 = findViewById(R.id.k2button);
         frisbee = findViewById(R.id.frisbeebutton);
-
+        superTv = findViewById(R.id.superButton);
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,23 +84,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tgrSardegna.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-                Intent tgr = new Intent(getBaseContext(), TgrSardegna.class);
-                startActivity(tgr);
-
-            }
-        });
-
         videolina.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View arg0) {
 
-                Intent videolinaWeb = new Intent(getBaseContext(), Videolina.class);
+                Intent videolinaWeb = new Intent(getBaseContext(), ChannelInterface.class);
+                videolinaWeb.putExtra("URL", "http://livestreaming.videolina.it/live/Videolina/chunklist_w1548194757.m3u8");
                 startActivity(videolinaWeb);
 
             }
@@ -269,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_1@810993/master.m3u8?hdnts=st=1559845194~exp=1559931594~acl=/*~hmac=877e074ac091df4a9d3406b63474da090678d4eef65c21489d443b94d4de7087&mux_audio=true");
+                intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_4@810998/master.m3u8?hdnts=st=1564228002~exp=1564314402~acl=/*~hmac=6c0b77c0af71417fd823ef483a0d15c72e267308b83fdcb0e1b2228dba9dd703&mux_audio=true");
                 startActivity(intent);
 
             }
@@ -453,6 +443,31 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://www.mytivu.it/Application/Channels/Frisbee.php");
                 startActivity(intent);
+
+            }
+        });
+
+        radioItaliaTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent radioitaliaWeb = new Intent(getBaseContext(), ChannelInterface.class);
+                radioitaliaWeb.putExtra("URL", "http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_384x256_av-p.m3u8?sd=10&rebase=on");
+                startActivity(radioitaliaWeb);
+
+            }
+        });
+
+
+        superTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent radioitaliaWeb = new Intent(getBaseContext(), ChannelInterface.class);
+                radioitaliaWeb.putExtra("URL", "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/index_800_av-p.m3u8");
+                startActivity(radioitaliaWeb);
 
             }
         });
