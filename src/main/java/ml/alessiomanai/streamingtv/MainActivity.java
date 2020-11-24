@@ -101,7 +101,9 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                Intent canale5Web = new Intent(getBaseContext(), Canale5.class);
+                String url = "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8";
+                Intent canale5Web = new Intent(getBaseContext(), ChannelInterface.class);
+                canale5Web.putExtra("URL", url);
                 startActivity(canale5Web);
 
             }
