@@ -7,18 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import ml.alessiomanai.streamingtv.canali.Canale5;
 import ml.alessiomanai.streamingtv.canali.ChannelInterface;
-import ml.alessiomanai.streamingtv.canali.FoodNetwork;
-import ml.alessiomanai.streamingtv.canali.Giallo;
-import ml.alessiomanai.streamingtv.canali.Italia1;
-import ml.alessiomanai.streamingtv.canali.Rai2;
-import ml.alessiomanai.streamingtv.canali.RsiLa1;
-import ml.alessiomanai.streamingtv.canali.RsiLa2;
-import ml.alessiomanai.streamingtv.canali.TgrSardegna;
-import ml.alessiomanai.streamingtv.canali.TopCrime;
-import ml.alessiomanai.streamingtv.canali.Tv8;
-import ml.alessiomanai.streamingtv.canali.Videolina;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,14 +15,12 @@ public class MainActivity extends AppCompatActivity {
     Button radioItaliaTv;
     Button videolina;
     Button canale5;
-    Button rsiLa1;
-    Button rsiLa2;
     Button tv8;
     Button italia1;
     Button topcrime;
-    Button giallo, superTv;
+    Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, cielo, dMax, nove;
-    Button iris, focus, boing, cartoonito, paramountChannel, tgcom24, skytg24, spyke, cine34, k2, frisbee;
+    Button iris, focus, boing, cartoonito, paramountChannel, spyke, cine34, k2, frisbee, italia7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
         radioItaliaTv = findViewById(R.id.radioItaliaButton);
         videolina = findViewById(R.id.videolinaButton);
         canale5 = findViewById(R.id.canale5button);
-        rsiLa1 = findViewById(R.id.rsila1button);
-        rsiLa2 = findViewById(R.id.rsila2button);
+        kisskiss = findViewById(R.id.kisskissButton);
+        m2o = findViewById(R.id.m2oButton);
         tv8 = findViewById(R.id.tv8button);
         italia1 = findViewById(R.id.italia1button);
         topcrime = findViewById(R.id.topcrimebutton);
@@ -57,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         la5 = findViewById(R.id.la5button);
         motorTrend = findViewById(R.id.motorTrendbutton);
         realTime = findViewById(R.id.realTimebutton);
-        cielo = findViewById(R.id.cieloButton);
         dMax = findViewById(R.id.dmaxButton);
         nove = findViewById(R.id.noveButton);
         iris = findViewById(R.id.irisbutton);
@@ -65,20 +51,20 @@ public class MainActivity extends AppCompatActivity {
         boing = findViewById(R.id.boingbutton);
         cartoonito = findViewById(R.id.cartoonitobutton);
         paramountChannel = findViewById(R.id.paramountChannelbutton);
-        tgcom24 = findViewById(R.id.tgcom24button);
-        skytg24 = findViewById(R.id.skyTg24button);
         spyke = findViewById(R.id.spikebutton);
-        cine34 = findViewById(R.id.cine34button);
-        k2 = findViewById(R.id.k2button);
-        frisbee = findViewById(R.id.frisbeebutton);
         superTv = findViewById(R.id.superButton);
+        deejay = findViewById(R.id.deejayButton);
+        italia7 = findViewById(R.id.italia7Button);
+        canale10 = findViewById(R.id.canale10Button);
+        gold7 = findViewById(R.id.gold7Button);
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View arg0) {
 
-                Intent food = new Intent(getBaseContext(), FoodNetwork.class);
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_6@1000854/master.m3u8?hdnts=st=1586086849~exp=1586173249~acl=/i/*~hmac=49ca8a624a617228910e6a0b491ab25e78ea7ab08c404c6800fc366e15a03146&mux_audio=true");
                 startActivity(food);
 
             }
@@ -109,35 +95,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        rsiLa1.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-                Intent rsiLa1web = new Intent(getBaseContext(), RsiLa1.class);
-                startActivity(rsiLa1web);
-
-            }
-        });
-
-        rsiLa2.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-                Intent rsiLa2web = new Intent(getBaseContext(), RsiLa2.class);
-                startActivity(rsiLa2web);
-
-            }
-        });
-
         tv8.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View arg0) {
 
-                Intent tv8web = new Intent(getBaseContext(), Tv8.class);
-                startActivity(tv8web);
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://www.mytivu.it/Application/Channels/TV8.php");
+                startActivity(intent);
 
             }
         });
@@ -148,8 +113,9 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                Intent italia1web = new Intent(getBaseContext(), Italia1.class);
-                startActivity(italia1web);
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8");
+                startActivity(intent);
 
             }
         });
@@ -159,8 +125,9 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                Intent topcrimeweb = new Intent(getBaseContext(), TopCrime.class);
-                startActivity(topcrimeweb);
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lt)/index.m3u8");
+                startActivity(intent);
 
             }
         });
@@ -170,8 +137,9 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                Intent gialloweb = new Intent(getBaseContext(), Giallo.class);
-                startActivity(gialloweb);
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_2@810996/master.m3u8?hdnts=st=1564227924~exp=1564314324~acl=/*~hmac=98bf7f8b6e1d65254efde4c3350f77d0e01d778d5e86abffd3ff244df230faad&mux_audio=true");
+                startActivity(intent);
 
             }
         });
@@ -267,18 +235,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        cielo.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://skyanywhere3-i.akamaihd.net/hls/live/510693/cielo/playlist.m3u8?hdnea=st=1572279606~exp=1608028200~acl=/*~hmac=18c005bed78d7962401e55b92d29ee4f05023f9144388266daf5dfcf3b22b47a&Origin=www.cielotv.it");
-                startActivity(intent);
-
-            }
-        });
 
         dMax.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -358,32 +314,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        skytg24.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://skyanywhere3-i.akamaihd.net/hls/live/510696/tg24/playlist.m3u8");
-                startActivity(intent);
-
-            }
-        });
-
-        tgcom24.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(KF)/index.m3u8");
-                startActivity(intent);
-
-            }
-        });
-
         iris.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -410,44 +340,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        cine34.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8");
-                startActivity(intent);
-
-            }
-        });
-
-        k2.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://www.mytivu.it/Application/Channels/K2.php");
-                startActivity(intent);
-
-            }
-        });
-
-        frisbee.setOnClickListener(new View.OnClickListener() {
-            @Override
-
-            public void onClick(View arg0) {
-
-
-                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://www.mytivu.it/Application/Channels/Frisbee.php");
-                startActivity(intent);
-
-            }
-        });
 
         radioItaliaTv.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -467,9 +359,81 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                Intent radioitaliaWeb = new Intent(getBaseContext(), ChannelInterface.class);
-                radioitaliaWeb.putExtra("URL", "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/index_800_av-p.m3u8");
-                startActivity(radioitaliaWeb);
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/index_800_av-p.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        kisskiss.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "http://wma05.fluidstream.net/KissKissTV/KissKissTV.stream/chunklist_w573387836.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        m2o.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        deejay.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://deejay-tv-lh.akamaized.net/i/DeejayTv_1@129866/master.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        italia7.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "http://151.0.207.99:1935/italia7/italia7/playlist.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        canale10.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "http://37.187.142.147:1935/ch10live/high.stream/chunklist_w543110031.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        gold7.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://stream2.xdevel.com/video0s86-21/stream/playlist_dvr.m3u8");
+                startActivity(intent);
 
             }
         });

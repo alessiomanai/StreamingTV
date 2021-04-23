@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,6 +13,21 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Canali nazionali"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,11 +65,12 @@
                     android:text="Rete 4"></Button>
 
                 <Button
-                    android:id="@+id/videolinaButton"
+                    android:id="@+id/italia2button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Videolina"></Button>
+                    android:text="Italia 2"></Button>
+
 
             </LinearLayout>
 
@@ -119,11 +134,11 @@
                     android:text="Mediaset 20"></Button>
 
                 <Button
-                    android:id="@+id/italia2button"
+                    android:id="@+id/superButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Italia 2"></Button>
+                    android:text="Super" />
 
             </LinearLayout>
 
@@ -200,33 +215,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/cine34button"
+                    android:id="@+id/realTimebutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Cine34"></Button>
-
-                <Button
-                    android:id="@+id/tgcom24button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="TgCom24"></Button>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/skyTg24button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Sky TG 24"></Button>
+                    android:text="Real Time"></Button>
 
                 <Button
                     android:id="@+id/spikebutton"
@@ -259,27 +252,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/realTimebutton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Real Time"></Button>
-
-                <Button
-                    android:id="@+id/cieloButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Cielo"></Button>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -306,22 +278,15 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/k2button"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="K2"></Button>
-
-                <Button
-                    android:id="@+id/frisbeebutton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Frisbee"></Button>
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Canali regionali"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -332,11 +297,70 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/superButton"
+                    android:id="@+id/italia7Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Super" />
+                    android:text="Italia 7"></Button>
+
+                <Button
+                    android:id="@+id/videolinaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Videolina"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/canale10Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Canale 10"></Button>
+
+                <Button
+                    android:id="@+id/gold7Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="7 Gold"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Canali radio"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/kisskissButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kiss Kiss" />
 
                 <Button
                     android:id="@+id/radioItaliaButton"
@@ -354,20 +378,21 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/rsila1button"
+                    android:id="@+id/m2oButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Rsi La1"></Button>
+                    android:text="M2O" />
 
                 <Button
-                    android:id="@+id/rsila2button"
+                    android:id="@+id/deejayButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Rsi La2"></Button>
+                    android:text="Dee Jay" />
 
             </LinearLayout>
+
 
         </LinearLayout>
 

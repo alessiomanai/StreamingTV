@@ -12,17 +12,6 @@
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity android:name=".canali.ChannelInterface"></activity>
-        <activity android:name=".canali.Giallo" />
-        <activity android:name=".canali.TopCrime" />
-        <activity android:name=".canali.Italia1" />
-        <activity android:name=".canali.Tv8" />
-        <activity android:name=".canali.RsiLa2" />
-        <activity android:name=".canali.RsiLa1" />
-        <activity android:name=".canali.Canale5" />
-        <activity android:name=".canali.TgrSardegna" />
-        <activity android:name=".canali.FoodNetwork" />
-        <activity android:name=".canali.Videolina" />
-        <activity android:name=".canali.Rai2" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
