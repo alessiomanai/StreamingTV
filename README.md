@@ -15,7 +15,7 @@ L'Applicazione è disponibile per tutti i dispositivi Android e Fire TV a partir
 
 SourceForge: https://streaming-tv-italia.sourceforge.io/
 
-	Copyright (C) 2020  Alessio Manai
+	Copyright (C) 2020-2021  Alessio Manai
 
  	This program is free software: you can redistribute it and/or modify
  	it under the terms of the GNU General Public License as published by
