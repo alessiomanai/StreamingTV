@@ -11,7 +11,9 @@ Alcuni canali disponibili:
 - DMax
 - Cielo
 
-L'Applicazione è disponibile per tutti i dispositivi Android e Fire TV a partire dalla versione Lollipop 5
+L'Applicazione è disponibile per tutti i dispositivi Android e Fire TV a partire dalla versione Lollipop 5.
+
+Versione web application scritta in Angular [qui](https://github.com/alessiomanai/angular-streamingtv).
 
 SourceForge: https://streaming-tv-italia.sourceforge.io/
 
