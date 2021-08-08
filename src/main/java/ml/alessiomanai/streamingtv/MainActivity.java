@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     Button videolina;
     Button canale5;
     Button tv8;
-    Button italia1;
-    Button topcrime;
-    Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7;
+    Button italia1, r101, vh1;
+    Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
+    Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, cielo, dMax, nove;
-    Button iris, focus, boing, cartoonito, paramountChannel, spyke, cine34, k2, frisbee, italia7;
+    Button iris, focus, boing, cartoonito, paramountChannel, spyke, tgcom24, k2, frisbee, italia7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +57,40 @@ public class MainActivity extends AppCompatActivity {
         italia7 = findViewById(R.id.italia7Button);
         canale10 = findViewById(R.id.canale10Button);
         gold7 = findViewById(R.id.gold7Button);
+        rai1 = findViewById(R.id.rai1button);
+        tgcom24 = findViewById(R.id.tgcom24button);
+        virginRadio = findViewById(R.id.virginRadioButton);
+        radioMonteCarlo = findViewById(R.id.radioMonteCarloButton);
+        sanMarinoRtv = findViewById(R.id.sanMarinoRTVButton);
+        sanMarinoSport = findViewById(R.id.sanMarinoSportButton);
+        sardegnaUno = findViewById(R.id.sardegnaUnoButton);
+        retesoleLazio = findViewById(R.id.reteSoleLazioButton);
+        r101 = findViewById(R.id.r101Button);
+        vh1 = findViewById(R.id.vh1Button);
+
+        rai1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "http://ott-cdn.ucom.am:80/s29/04.m3u8");
+                startActivity(food);
+
+            }
+        });
+
+        tgcom24.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/index.m3u8");
+                startActivity(food);
+
+            }
+        });
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -437,5 +471,102 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        radioMonteCarlo.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(bb)/index.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        virginRadio.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        sanMarinoRtv.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch01/_definst_/smil:ch-01.smil/chunklist_b1692000_slita.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        sanMarinoSport.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/_definst_/smil:ch-02.smil/chunklist_b542000_slita_t64TUQoMzYwcCk=.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        sardegnaUno.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://59d7d6f47d7fc.streamlock.net/sardegnauno/sardegnauno/playlist.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        retesoleLazio.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "http://5c389faa13be3.streamlock.net:1935/8058/8058/playlist.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        r101.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(er)/index.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        vh1.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
     }
 }
