@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     Button videolina;
     Button canale5;
     Button tv8;
-    Button italia1, r101, vh1;
+    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, raiPremium, raiStoria;
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
-    Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, cielo, dMax, nove;
-    Button iris, focus, boing, cartoonito, paramountChannel, spyke, tgcom24, k2, frisbee, italia7;
+    Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
+    Button iris, focus, boing, cartoonito, paramountChannel, spyke, tgcom24, italia7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
         retesoleLazio = findViewById(R.id.reteSoleLazioButton);
         r101 = findViewById(R.id.r101Button);
         vh1 = findViewById(R.id.vh1Button);
+        la7 = findViewById(R.id.la7button);
+        la7d = findViewById(R.id.la7Dbutton);
+        rai2 = findViewById(R.id.rai2button);
+        rai3 = findViewById(R.id.rai3button);
+        raiSport = findViewById(R.id.raiSportbutton);
+        raiPremium = findViewById(R.id.raiPremiumbutton);
+        sportitalia = findViewById(R.id.sportItaliaButton);
+        raiStoria = findViewById(R.id.raiStoriaButton);
 
         rai1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +83,30 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent food = new Intent(getBaseContext(), ChannelInterface.class);
                 food.putExtra("URL", "http://ott-cdn.ucom.am:80/s29/04.m3u8");
+                startActivity(food);
+
+            }
+        });
+
+        rai2.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://streamcdnb11-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raidue1/hls/playlist_ma.m3u8?baseuri=%2Fraidue1%2Fhls%2F&tstart=0&tend=1636896681&tof=86400&tk2=b31998150ffb2f68f3d02096b2e68e35f7f0ed50d7ebe6b29d88bac9059a7020");
+                startActivity(food);
+
+            }
+        });
+
+        rai3.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://streamcdnb11-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raitre1/hls/playlist_ma.m3u8?baseuri=%2Fraitre1%2Fhls%2F&tstart=0&tend=1636896833&tof=86400&tk2=488fefa68296673b2564ef73fdcff8198ffe38b417e7e9f13386c20cc6ae5e6e");
                 startActivity(food);
 
             }
@@ -121,7 +153,7 @@ public class MainActivity extends AppCompatActivity {
 
             public void onClick(View arg0) {
 
-                String url = "https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8";
+                String url = "https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8";
                 Intent canale5Web = new Intent(getBaseContext(), ChannelInterface.class);
                 canale5Web.putExtra("URL", url);
                 startActivity(canale5Web);
@@ -148,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -160,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lt)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lt)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -185,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent rete4web = new Intent(getBaseContext(), ChannelInterface.class);
-                rete4web.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8");
+                rete4web.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8");
                 startActivity(rete4web);
 
             }
@@ -198,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -211,7 +243,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8");
+                intent.putExtra("URL","https://tube.xy-space.de/static/streaming-playlists/hls/a94e5fd5-021d-4ba4-ae86-6e73e47a747b/0.m3u8");
                 startActivity(intent);
 
             }
@@ -224,7 +256,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i2)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i2)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -237,7 +269,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -316,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kb)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kb)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -329,7 +361,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(la)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(la)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -355,7 +387,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -368,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(fu)/index.m3u8");
+                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(fu)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -568,5 +600,77 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        la7.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS-B/Live_1280x720_.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        la7d.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://d15umi5iaezxgx.cloudfront.net/LA7D/CLN/HLS-B/Live.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+
+        raiSport.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://raisportdue1-live.akamaized.net/hls/live/598322/raisportdue1/raisportdue1/playlist.m3u8?hdnea=st=1636897185~exp=1636897335~acl=/*~hmac=3e1c9a77bf9ad4fcbf664a72ced7b45215b2b25fa7cd225a0774358c95cc711f");
+                startActivity(intent);
+
+            }
+        });
+
+        raiPremium.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://streamcdnr9-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raipremium1/hls/playlist_ma.m3u8?baseuri=%2Fraipremium1%2Fhls%2F&tstart=0&tend=1636897262&tof=86400&tk2=709673f6a0d29725dc7e52f5f33906020ccaa3c7a18ff889e78e7f6c040b5ad3");
+                startActivity(intent);
+
+            }
+        });
+
+        sportitalia.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sihd_480p/chunklist.m3u8");
+                startActivity(intent);
+
+            }
+        });
+
+        raiStoria.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+                intent.putExtra("URL", "https://raistoria1-live.akamaized.net/hls/live/598337/raistoria1/raistoria1/playlist.m3u8?hdnea=st=1636898264~exp=1636898414~acl=/*~hmac=849939a45690565f35838e17635bf18384e61bd647a73a64fd0b926a3b9ad8ab");
+                startActivity(intent);
+
+            }
+        });
     }
 }

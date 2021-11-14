@@ -9,7 +9,6 @@ Alcuni canali disponibili:
 - FoodNetwork
 - MotorTrend
 - DMax
-- Cielo
 
 L'Applicazione è disponibile per tutti i dispositivi Android e Fire TV a partire dalla versione Lollipop 5.
 
