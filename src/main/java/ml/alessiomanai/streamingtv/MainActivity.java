@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     Button videolina;
     Button canale5;
     Button tv8;
-    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, raiPremium, raiStoria;
+    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, raiPremium, skyTg24;
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
-    Button iris, focus, boing, cartoonito, paramountChannel, spyke, tgcom24, italia7;
+    Button iris, cielo, boing, cartoonito, paramountChannel, spyke, tgcom24, italia7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         dMax = findViewById(R.id.dmaxButton);
         nove = findViewById(R.id.noveButton);
         iris = findViewById(R.id.irisbutton);
-        focus = findViewById(R.id.focusbutton);
+        cielo = findViewById(R.id.cielobutton);
         boing = findViewById(R.id.boingbutton);
         cartoonito = findViewById(R.id.cartoonitobutton);
         paramountChannel = findViewById(R.id.paramountChannelbutton);
@@ -74,27 +74,23 @@ public class MainActivity extends AppCompatActivity {
         raiSport = findViewById(R.id.raiSportbutton);
         raiPremium = findViewById(R.id.raiPremiumbutton);
         sportitalia = findViewById(R.id.sportItaliaButton);
-        raiStoria = findViewById(R.id.raiStoriaButton);
+        skyTg24 = findViewById(R.id.skytg24Button);
 
-        rai1.setOnClickListener(new View.OnClickListener() {
-            @Override
 
-            public void onClick(View arg0) {
+        rai1.setOnClickListener(arg0 -> {
 
-                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
-                food.putExtra("URL", "http://ott-cdn.ucom.am:80/s29/04.m3u8");
-                startActivity(food);
+            Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+            food.putExtra("URL", "http://ott-cdn.ucom.am:80/s29/04.m3u8");
+            startActivity(food);
 
-            }
         });
 
         rai2.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent food = new Intent(getBaseContext(), ChannelInterface.class);
-                food.putExtra("URL", "https://streamcdnb11-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raidue1/hls/playlist_ma.m3u8?baseuri=%2Fraidue1%2Fhls%2F&tstart=0&tend=1636896681&tof=86400&tk2=b31998150ffb2f68f3d02096b2e68e35f7f0ed50d7ebe6b29d88bac9059a7020");
+                food.putExtra("URL", "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(b6)/index.m3u8");
                 startActivity(food);
 
             }
@@ -102,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
         rai3.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent food = new Intent(getBaseContext(), ChannelInterface.class);
@@ -114,11 +109,10 @@ public class MainActivity extends AppCompatActivity {
 
         tgcom24.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent food = new Intent(getBaseContext(), ChannelInterface.class);
-                food.putExtra("URL", "https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/index.m3u8");
+                food.putExtra("URL", "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kf)/index.m3u8");
                 startActivity(food);
 
             }
@@ -126,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
 
         foodNetwork.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent food = new Intent(getBaseContext(), ChannelInterface.class);
@@ -138,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
 
         videolina.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent videolinaWeb = new Intent(getBaseContext(), ChannelInterface.class);
@@ -150,10 +142,9 @@ public class MainActivity extends AppCompatActivity {
 
         canale5.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-                String url = "https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8";
+                String url = "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8";
                 Intent canale5Web = new Intent(getBaseContext(), ChannelInterface.class);
                 canale5Web.putExtra("URL", url);
                 startActivity(canale5Web);
@@ -163,7 +154,6 @@ public class MainActivity extends AppCompatActivity {
 
         tv8.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -176,11 +166,10 @@ public class MainActivity extends AppCompatActivity {
 
         italia1.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -188,11 +177,10 @@ public class MainActivity extends AppCompatActivity {
 
         topcrime.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lt)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -200,7 +188,6 @@ public class MainActivity extends AppCompatActivity {
 
         giallo.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -212,12 +199,10 @@ public class MainActivity extends AppCompatActivity {
 
         rete4.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent rete4web = new Intent(getBaseContext(), ChannelInterface.class);
-                rete4web.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8");
+                rete4web.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8");
                 startActivity(rete4web);
 
             }
@@ -225,12 +210,10 @@ public class MainActivity extends AppCompatActivity {
 
         mediasetExtra.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kq)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -238,12 +221,10 @@ public class MainActivity extends AppCompatActivity {
 
         mediaset20.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://tube.xy-space.de/static/streaming-playlists/hls/a94e5fd5-021d-4ba4-ae86-6e73e47a747b/0.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(lb)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -251,12 +232,10 @@ public class MainActivity extends AppCompatActivity {
 
         italia2.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i2)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i2)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -264,12 +243,10 @@ public class MainActivity extends AppCompatActivity {
 
         la5.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ka)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -277,9 +254,7 @@ public class MainActivity extends AppCompatActivity {
 
         motorTrend.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_1@810993/master.m3u8?hdnts=st=1559845194~exp=1559931594~acl=/*~hmac=877e074ac091df4a9d3406b63474da090678d4eef65c21489d443b94d4de7087&mux_audio=true");
@@ -290,9 +265,7 @@ public class MainActivity extends AppCompatActivity {
 
         realTime.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_4@810998/master.m3u8?hdnts=st=1564228002~exp=1564314402~acl=/*~hmac=6c0b77c0af71417fd823ef483a0d15c72e267308b83fdcb0e1b2228dba9dd703&mux_audio=true");
@@ -304,9 +277,7 @@ public class MainActivity extends AppCompatActivity {
 
         dMax.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_5@825063/master.m3u8");
@@ -317,9 +288,7 @@ public class MainActivity extends AppCompatActivity {
 
         nove.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://sbshdlu5-lh.akamaihd.net/i/sbshdl_3@810997/master.m3u8?hdnts=st=1585746893~exp=1585833293~acl=/i/*~hmac=7aa28aab591fe6ddf8d0480b4f202d3536f6f5b26dedf9d944c35b6320950ca4&mux_audio=true");
@@ -330,9 +299,7 @@ public class MainActivity extends AppCompatActivity {
 
         paramountChannel.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","http://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@195657/index_2500_av-p.m3u8");
@@ -343,12 +310,10 @@ public class MainActivity extends AppCompatActivity {
 
         boing.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kb)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kb)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -356,12 +321,10 @@ public class MainActivity extends AppCompatActivity {
 
         cartoonito.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(la)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(la)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -369,9 +332,7 @@ public class MainActivity extends AppCompatActivity {
 
         spyke.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
-
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
                 intent.putExtra("URL","https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@829515/master.m3u8");
@@ -382,25 +343,21 @@ public class MainActivity extends AppCompatActivity {
 
         iris.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/dash_d0_clr_vos/live/channel(ki)/manifest.mpd");
                 startActivity(intent);
 
             }
         });
 
-        focus.setOnClickListener(new View.OnClickListener() {
+        cielo.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
-
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(fu)/index.m3u8");
+                intent.putExtra("URL","https://www.mytivu.it/Application/Channels/Cielo.php");
                 startActivity(intent);
 
             }
@@ -409,7 +366,6 @@ public class MainActivity extends AppCompatActivity {
 
         radioItaliaTv.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent radioitaliaWeb = new Intent(getBaseContext(), ChannelInterface.class);
@@ -422,7 +378,6 @@ public class MainActivity extends AppCompatActivity {
 
         superTv.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -434,7 +389,6 @@ public class MainActivity extends AppCompatActivity {
 
         kisskiss.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -446,7 +400,6 @@ public class MainActivity extends AppCompatActivity {
 
         m2o.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -458,7 +411,6 @@ public class MainActivity extends AppCompatActivity {
 
         deejay.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -470,7 +422,6 @@ public class MainActivity extends AppCompatActivity {
 
         italia7.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -482,7 +433,6 @@ public class MainActivity extends AppCompatActivity {
 
         canale10.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -494,7 +444,6 @@ public class MainActivity extends AppCompatActivity {
 
         gold7.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -506,7 +455,6 @@ public class MainActivity extends AppCompatActivity {
 
         radioMonteCarlo.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -518,7 +466,6 @@ public class MainActivity extends AppCompatActivity {
 
         virginRadio.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -530,7 +477,6 @@ public class MainActivity extends AppCompatActivity {
 
         sanMarinoRtv.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -542,7 +488,6 @@ public class MainActivity extends AppCompatActivity {
 
         sanMarinoSport.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -554,7 +499,6 @@ public class MainActivity extends AppCompatActivity {
 
         sardegnaUno.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -566,7 +510,6 @@ public class MainActivity extends AppCompatActivity {
 
         retesoleLazio.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -578,11 +521,10 @@ public class MainActivity extends AppCompatActivity {
 
         r101.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL", "https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(er)/index.m3u8");
+                intent.putExtra("URL", "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -590,7 +532,6 @@ public class MainActivity extends AppCompatActivity {
 
         vh1.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -602,7 +543,6 @@ public class MainActivity extends AppCompatActivity {
 
         la7.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -614,7 +554,6 @@ public class MainActivity extends AppCompatActivity {
 
         la7d.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -627,7 +566,6 @@ public class MainActivity extends AppCompatActivity {
 
         raiSport.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -639,7 +577,6 @@ public class MainActivity extends AppCompatActivity {
 
         raiPremium.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -651,7 +588,6 @@ public class MainActivity extends AppCompatActivity {
 
         sportitalia.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
@@ -661,16 +597,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        raiStoria.setOnClickListener(new View.OnClickListener() {
+        skyTg24.setOnClickListener(new View.OnClickListener() {
             @Override
-
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL", "https://raistoria1-live.akamaized.net/hls/live/598337/raistoria1/raistoria1/playlist.m3u8?hdnea=st=1636898264~exp=1636898414~acl=/*~hmac=849939a45690565f35838e17635bf18384e61bd647a73a64fd0b926a3b9ad8ab");
+                intent.putExtra("URL", "https://www.mytivu.it/Application/Channels/SkyTG24.php");
                 startActivity(intent);
 
             }
         });
+
     }
 }

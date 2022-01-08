@@ -16,7 +16,7 @@ Versione web application scritta in Angular [qui](https://github.com/alessiomana
 
 SourceForge: https://streaming-tv-italia.sourceforge.io/
 
-	Copyright (C) 2020-2021  Alessio Manai
+	Copyright (C) 2020-2022  Alessio Manai
 
  	This program is free software: you can redistribute it and/or modify
  	it under the terms of the GNU General Public License as published by

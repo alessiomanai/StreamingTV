@@ -259,11 +259,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/focusbutton"
+                    android:id="@+id/cielobutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Focus"></Button>
+                    android:text="Cielo"></Button>
 
                 <Button
                     android:id="@+id/cartoonitobutton"
@@ -377,11 +377,11 @@
                     android:text="SportItalia"></Button>
 
                 <Button
-                    android:id="@+id/raiStoriaButton"
+                    android:id="@+id/skytg24Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Rai Storia"></Button>
+                    android:text="Sky TG 24"></Button>
 
             </LinearLayout>
 
