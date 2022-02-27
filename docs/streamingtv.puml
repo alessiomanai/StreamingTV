@@ -1,0 +1,34 @@
+@startuml
+class ml.alessiomanai.streamingtv.utils.WebViewSettings {
++ {static} WebView doSettings(WebView)
+}
+class ml.alessiomanai.streamingtv.MainActivity {
+~ Button foodNetwork
+~ Button radioItaliaTv
+~ Button videolina
+~ Button canale5
+~ Button tv8
+~ Button italia1
+~ Button topcrime
+~ Button giallo
+~ Button rete4
+~ Button iris
+# void onCreate(Bundle)
+}
+class ml.alessiomanai.streamingtv.ExampleInstrumentedTest {
++ void useAppContext()
+}
+class ml.alessiomanai.streamingtv.utils.M3u8Reader {
++ {static} String getHtmlReader(String)
+}
+class ml.alessiomanai.streamingtv.ExampleUnitTest {
++ void addition_isCorrect()
+}
+class ml.alessiomanai.streamingtv.canali.ChannelInterface {
+# void onCreate(Bundle)
+}
+
+
+androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.canali.ChannelInterface
+@enduml

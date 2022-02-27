@@ -15,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button radioItaliaTv;
     Button videolina;
     Button canale5;
-    Button tv8;
-    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, raiPremium, skyTg24;
+    Button tv8, senatoTV, cine34;
+    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, sportitaliaMotori, skyTg24;
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
@@ -72,9 +72,11 @@ public class MainActivity extends AppCompatActivity {
         rai2 = findViewById(R.id.rai2button);
         rai3 = findViewById(R.id.rai3button);
         raiSport = findViewById(R.id.raiSportbutton);
-        raiPremium = findViewById(R.id.raiPremiumbutton);
+        sportitaliaMotori = findViewById(R.id.sportitaliaMotoributton);
         sportitalia = findViewById(R.id.sportItaliaButton);
         skyTg24 = findViewById(R.id.skytg24Button);
+        senatoTV = findViewById(R.id.senatoTVButton);
+        cine34 = findViewById(R.id.cine34Button);
 
 
         rai1.setOnClickListener(arg0 -> {
@@ -346,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/dash_d0_clr_vos/live/channel(ki)/manifest.mpd");
+                intent.putExtra("URL","https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ki)/index.m3u8");
                 startActivity(intent);
 
             }
@@ -575,12 +577,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        raiPremium.setOnClickListener(new View.OnClickListener() {
+        sportitaliaMotori.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
                 Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
-                intent.putExtra("URL", "https://streamcdnr9-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raipremium1/hls/playlist_ma.m3u8?baseuri=%2Fraipremium1%2Fhls%2F&tstart=0&tend=1636897262&tof=86400&tk2=709673f6a0d29725dc7e52f5f33906020ccaa3c7a18ff889e78e7f6c040b5ad3");
+                intent.putExtra("URL", "https://di-l1o0e8cu.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8");
                 startActivity(intent);
 
             }
@@ -608,5 +610,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cine34.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(b6)/index.m3u8");
+                startActivity(food);
+
+            }
+        });
+
+        senatoTV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+
+                Intent food = new Intent(getBaseContext(), ChannelInterface.class);
+                food.putExtra("URL", "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?video_id=13440&uuid=&channel_name=senato_webtv1&detected_delivery_method=hls");
+                startActivity(food);
+
+            }
+        });
     }
 }

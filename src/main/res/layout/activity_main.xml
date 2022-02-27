@@ -87,11 +87,11 @@
                     android:text="Rai Sport"></Button>
 
                 <Button
-                    android:id="@+id/raiPremiumbutton"
+                    android:id="@+id/sportitaliaMotoributton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Rai Premium"></Button>
+                    android:text="SI Motori"></Button>
 
             </LinearLayout>
 
@@ -404,6 +404,28 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="San Marino Sport"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/senatoTVButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Senato TV"></Button>
+
+                <Button
+                    android:id="@+id/cine34Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cine34"></Button>
 
             </LinearLayout>
 
