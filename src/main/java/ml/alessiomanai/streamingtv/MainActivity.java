@@ -7,6 +7,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
 import ml.alessiomanai.streamingtv.canali.ChannelInterface;
 
 public class MainActivity extends AppCompatActivity {
@@ -78,6 +84,14 @@ public class MainActivity extends AppCompatActivity {
         senatoTV = findViewById(R.id.senatoTVButton);
         cine34 = findViewById(R.id.cine34Button);
 
+        /*
+        try {
+            ExecutorService executor = Executors.newFixedThreadPool(2);
+            Future<ArrayList< >> process = executor.submit( );
+            listaVestizioni = process.get();
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }*/
 
         rai1.setOnClickListener(arg0 -> {
 
