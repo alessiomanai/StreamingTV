@@ -1,20 +1,19 @@
 package ml.alessiomanai.streamingtv.connessione;
 
 import android.content.Context;
+import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.nio.charset.StandardCharsets;
+
 import java.util.ArrayList;
 import java.util.concurrent.Callable;
 
 public class ChannelUpdaterCallable implements Callable<ArrayList<JSONObject>> {
 
-    public ArrayList<JSONObject> getAssetJsonData(String json) {
+    public ArrayList<JSONObject> getAssetJsonData(String json){
 
         JSONArray jobj;
         ArrayList<JSONObject> list = new ArrayList<>();
@@ -35,12 +34,10 @@ public class ChannelUpdaterCallable implements Callable<ArrayList<JSONObject>> {
     }
 
     @Override
-    public ArrayList<JSONObject> call() throws Exception {
-        // Creating service handler class instance
+    public ArrayList<JSONObject> call(){
         WebRequest webreq = new WebRequest();
 
-        // Making a request to url and getting response
-        String URL = "";
+        String URL = "http://alessiomanai.altervista.org/streamingtv/channels.json";
         String jsonStr = webreq.makeWebServiceCall(URL, WebRequest.GET);
 
         return this.getAssetJsonData(jsonStr);
