@@ -149,7 +149,7 @@
     },
     {
         "nome": "sanMarinoSport",
-        "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/_definst_/smil:ch-02.smil/chunklist_b542000_slita_t64TUQoMzYwcCk=.m3u8"
+        "url": "https://d2hrvno5bw6tg2.cloudfront.net/smrtv-ch02/_definst_/smil:ch-02.smil/playlist.m3u8?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kMmhydm5vNWJ3NnRnMi5jbG91ZGZyb250Lm5ldC9zbXJ0di1jaDAyL19kZWZpbnN0Xy9zbWlsOmNoLTAyLnNtaWwvcGxheWxpc3QubTN1OCIsIkNvbmRpdGlvbiI6eyJJcEFkZHJlc3MiOnsiQVdTOlNvdXJjZUlwIjoiMC4wLjAuMC8wIn0sIkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNjI3OTk0ODE0MDE1fX19XX0_&Key-Pair-Id=APKAJXRZCR3BYC6OEKKA&Signature=H5vzIND9c39a-E7xkR2D5XoADhRT-yIFbcaJfzSQ4r5FEhfDZMBNyJs72L1vTSlwK8uSUOzqSh-1n4Z-WudYrnIEvhKu7ckB9FGg49KvAt0KA21vdX06gfFmo2vYKLFf9J~~3J-BL~agnBm1JPwaGXLD5bDBqGV4BG9t96jmdPsOQ9w3TmOywhml3-M-c6AK~xCs~SHnSNyPA4Oul~kBG5GtX9IOnju5veIY~szeTb9ZhS9Xj24WmSBz4IjWrsfhj00gveAC4zJ24Xk3axKs~~XwBG6UKSsnTAaDXPPoT0Xhg-Tc~EDKjVf2EBv2qtiC7fyfUA28SHaLlp01Tlswag__"
     },
     {
         "nome": "sardegnaUno",
@@ -177,7 +177,7 @@
     },
     {
         "nome": "raiSport",
-        "url": "https://raisportdue1-live.akamaized.net/hls/live/598322/raisportdue1/raisportdue1/playlist.m3u8?hdnea=st=1636897185~exp=1636897335~acl=/*~hmac=3e1c9a77bf9ad4fcbf664a72ced7b45215b2b25fa7cd225a0774358c95cc711f"
+        "url": "https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8"
     },
     {
         "nome": "sportitaliaMotori",

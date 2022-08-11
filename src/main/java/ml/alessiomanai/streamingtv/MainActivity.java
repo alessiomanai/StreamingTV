@@ -29,13 +29,14 @@ public class MainActivity extends AppCompatActivity {
     Button videolina;
     Button canale5;
     Button tv8, senatoTV, cine34;
-    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiSport, sportitaliaMotori, skyTg24;
+    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiNews24, sportitaliaMotori, skyTg24;
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
     Button iris, cielo, boing, cartoonito, paramountChannel, spyke, tgcom24, italia7;
 
     final String JSON_URL = "url";
+    private ArrayList<JSONObject> finalListaCanali;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,28 +87,19 @@ public class MainActivity extends AppCompatActivity {
         la7d = findViewById(R.id.la7Dbutton);
         rai2 = findViewById(R.id.rai2button);
         rai3 = findViewById(R.id.rai3button);
-        raiSport = findViewById(R.id.raiSportbutton);
+        raiNews24 = findViewById(R.id.raiNews24button);
         sportitaliaMotori = findViewById(R.id.sportitaliaMotoributton);
         sportitalia = findViewById(R.id.sportItaliaButton);
         skyTg24 = findViewById(R.id.skytg24Button);
         senatoTV = findViewById(R.id.senatoTVButton);
         cine34 = findViewById(R.id.cine34Button);
 
-        ArrayList<JSONObject> listaCanali = null;
-        try {
-            ExecutorService executor = Executors.newFixedThreadPool(2);
-            Future<ArrayList<JSONObject>> process = executor.submit(new ChannelUpdaterCallable());
-            listaCanali = process.get();
-        } catch (ExecutionException | InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        ArrayList<JSONObject> finalListaCanali = listaCanali;
+        finalListaCanali = caricaCanali();
 
         if(finalListaCanali == null || finalListaCanali.isEmpty()){
             noInternet(this);
         }
-
+        
         rai1.setOnClickListener(arg0 -> {
 
             try {
@@ -402,7 +394,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-
             }
         });
 
@@ -428,7 +419,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-
             }
         });
 
@@ -441,7 +431,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
 
             }
         });
@@ -457,7 +446,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-
             }
         });
 
@@ -472,7 +460,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-
             }
         });
 
@@ -485,7 +472,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
 
             }
         });
@@ -500,7 +486,6 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-
             }
         });
 
@@ -513,7 +498,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
 
             }
         });
@@ -685,7 +669,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        raiSport.setOnClickListener(new View.OnClickListener() {
+        raiNews24.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -768,7 +752,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
         intent.putExtra("URL", url);
         startActivity(intent);
-
     }
 
     private void noInternet(Context context){
@@ -776,14 +759,27 @@ public class MainActivity extends AppCompatActivity {
                 .setTitle("Nessuna connessione internet")
                 .setMessage("Non è stato possibile scaricare la lista dei canali aggiornata")
 
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                .setNegativeButton("Ricarica", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
+                        finalListaCanali = caricaCanali();
                     }
                 })
 
-                // A null listener allows the button to dismiss the dialog and take no further action.
-                .setNegativeButton(android.R.string.no, null)
+                .setPositiveButton(android.R.string.ok, null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
+    }
+
+    private ArrayList<JSONObject> caricaCanali(){
+
+        try {
+            ExecutorService executor = Executors.newFixedThreadPool(2);
+            Future<ArrayList<JSONObject>> process = executor.submit(new ChannelUpdaterCallable());
+            return process.get();
+        } catch (ExecutionException | InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 }

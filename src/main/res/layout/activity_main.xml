@@ -80,11 +80,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/raiSportbutton"
+                    android:id="@+id/raiNews24button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Rai Sport"></Button>
+                    android:text="Rai News 24"></Button>
 
                 <Button
                     android:id="@+id/sportitaliaMotoributton"
