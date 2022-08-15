@@ -2,6 +2,12 @@
 class ml.alessiomanai.streamingtv.utils.WebViewSettings {
 + {static} WebView doSettings(WebView)
 }
+class ml.alessiomanai.streamingtv.connessione.WebRequest {
++ {static} int GET
++ {static} int POST
++ String makeWebServiceCall(String,int)
++ String makeWebServiceCall(String,int,HashMap<String,String>)
+}
 class ml.alessiomanai.streamingtv.MainActivity {
 ~ Button foodNetwork
 ~ Button radioItaliaTv
@@ -13,7 +19,21 @@ class ml.alessiomanai.streamingtv.MainActivity {
 ~ Button giallo
 ~ Button rete4
 ~ Button iris
+~ String JSON_URL
+- ArrayList<JSONObject> finalListaCanali
 # void onCreate(Bundle)
+- void startChannel(String)
+- void noInternet(Context)
+- ArrayList<JSONObject> caricaCanali()
+}
+class ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable {
++ ArrayList<JSONObject> getAssetJsonData(String)
++ ArrayList<JSONObject> call()
+}
+class ml.alessiomanai.streamingtv.ChannelExoPlayer {
+- ExoPlayer player
+# void onCreate(Bundle)
+# void onDestroy()
 }
 class ml.alessiomanai.streamingtv.ExampleInstrumentedTest {
 + void useAppContext()
@@ -30,5 +50,7 @@ class ml.alessiomanai.streamingtv.canali.ChannelInterface {
 
 
 androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.MainActivity
+java.util.concurrent.Callable <|.. ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable
+androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.ChannelExoPlayer
 androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.canali.ChannelInterface
 @enduml
