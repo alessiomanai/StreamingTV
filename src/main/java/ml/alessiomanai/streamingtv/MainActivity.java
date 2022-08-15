@@ -19,7 +19,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import ml.alessiomanai.streamingtv.canali.ChannelInterface;
 import ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable;
 
 public class MainActivity extends AppCompatActivity {
@@ -749,7 +748,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void startChannel(String url){
-        Intent intent = new Intent(getBaseContext(), ChannelInterface.class);
+        Intent intent = new Intent(getBaseContext(), ChannelExoPlayer.class);
         intent.putExtra("URL", url);
         startActivity(intent);
     }

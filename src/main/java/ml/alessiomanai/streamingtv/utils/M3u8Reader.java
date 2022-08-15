@@ -2,9 +2,15 @@ package ml.alessiomanai.streamingtv.utils;
 
 public class M3u8Reader {
 
+    @Deprecated
     public static String getHtmlReader(String url){
 
         return "<html>\n" +
+                "<head>\n" +
+                "<meta http-equiv=\"Cache-Control\" content=\"no-cache, no-store, must-revalidate\" />\n" +
+                "<meta http-equiv=\"Pragma\" content=\"no-cache\" />\n" +
+                "<meta http-equiv=\"Expires\" content=\"0\" />\n" +
+                "</head>" +
                 "  <body style=\"margin: 0; padding: 0;\">\n" +
                 "    <script src=\"https://cdn.jsdelivr.net/npm/hls.js@latest\"></script>\n" +
                 "    <video id=\"video\" controls style=\"width: 100%    !important; height: 100%   !important;\"></video>\n" +

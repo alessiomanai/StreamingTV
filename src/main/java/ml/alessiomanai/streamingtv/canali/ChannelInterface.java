@@ -11,6 +11,7 @@ import ml.alessiomanai.streamingtv.R;
 import ml.alessiomanai.streamingtv.utils.M3u8Reader;
 import ml.alessiomanai.streamingtv.utils.WebViewSettings;
 
+@Deprecated
 public class ChannelInterface extends AppCompatActivity {
 
     @Override
