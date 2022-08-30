@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
     Button videolina;
     Button canale5;
     Button tv8, senatoTV, cine34;
-    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiNews24, sportitaliaMotori, skyTg24;
+    Button italia1, r101, vh1, la7, la7d, rai2, rai3, raiNews24, raiSport, skyTg24;
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
-    Button iris, cielo, boing, cartoonito, paramountChannel, spyke, tgcom24, italia7;
+    Button iris, cielo, boing, cartoonito, twentySeven, spyke, tgcom24, italia7;
 
     final String JSON_URL = "url";
     private ArrayList<JSONObject> finalListaCanali;
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         cielo = findViewById(R.id.cielobutton);
         boing = findViewById(R.id.boingbutton);
         cartoonito = findViewById(R.id.cartoonitobutton);
-        paramountChannel = findViewById(R.id.paramountChannelbutton);
+        twentySeven = findViewById(R.id.twentySevenbutton);
         spyke = findViewById(R.id.spikebutton);
         superTv = findViewById(R.id.superButton);
         deejay = findViewById(R.id.deejayButton);
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         rai2 = findViewById(R.id.rai2button);
         rai3 = findViewById(R.id.rai3button);
         raiNews24 = findViewById(R.id.raiNews24button);
-        sportitaliaMotori = findViewById(R.id.sportitaliaMotoributton);
+        raiSport = findViewById(R.id.raiSportbutton);
         sportitalia = findViewById(R.id.sportItaliaButton);
         skyTg24 = findViewById(R.id.skytg24Button);
         senatoTV = findViewById(R.id.senatoTVButton);
@@ -356,7 +356,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        paramountChannel.setOnClickListener(new View.OnClickListener() {
+        twentySeven.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
@@ -681,7 +681,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        sportitaliaMotori.setOnClickListener(new View.OnClickListener() {
+        raiSport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
 
