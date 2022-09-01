@@ -1,14 +1,14 @@
 package ml.alessiomanai.streamingtv;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.util.Log;
 import android.widget.Button;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -23,6 +23,7 @@ import ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable;
 
 public class MainActivity extends AppCompatActivity {
 
+    final String JSON_URL = "url";
     Button foodNetwork;
     Button radioItaliaTv;
     Button videolina;
@@ -33,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
     Button iris, cielo, boing, cartoonito, twentySeven, spyke, tgcom24, italia7;
-
-    final String JSON_URL = "url";
     private ArrayList<JSONObject> finalListaCanali;
 
     @Override
@@ -95,688 +94,537 @@ public class MainActivity extends AppCompatActivity {
 
         finalListaCanali = caricaCanali();
 
-        if(finalListaCanali == null || finalListaCanali.isEmpty()){
+        if (finalListaCanali == null || finalListaCanali.isEmpty()) {
             noInternet(this);
         }
-        
+
         rai1.setOnClickListener(arg0 -> {
 
             try {
                 startChannel(finalListaCanali.get(0).getString(JSON_URL));
-            } catch (JSONException e) {
-                e.printStackTrace();
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
 
         });
 
-        rai2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        rai2.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(1).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(1).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        rai3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        rai3.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(2).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(2).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        tgcom24.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        tgcom24.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(3).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(3).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        foodNetwork.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        foodNetwork.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(4).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(4).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        videolina.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        videolina.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(5).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(5).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        canale5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        canale5.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(6).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(6).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        tv8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        tv8.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(7).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(7).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
 
-        italia1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        italia1.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(8).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(8).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        topcrime.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(9).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        giallo.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(10).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        rete4.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(11).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        mediasetExtra.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(12).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        topcrime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        mediaset20.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(9).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(13).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        italia2.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(14).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        la5.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(15).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        giallo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        motorTrend.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(10).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(16).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        rete4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        realTime.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(11).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(17).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
-        });
 
-        mediasetExtra.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(12).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        mediaset20.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(13).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        italia2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(14).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        la5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(15).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        motorTrend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(16).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        realTime.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(17).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
         });
 
 
-        dMax.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        dMax.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(18).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(18).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        nove.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(19).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        twentySeven.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(20).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        boing.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(21).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+
+        });
+
+        cartoonito.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(22).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        spyke.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(23).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        nove.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        iris.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(19).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(24).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        twentySeven.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        cielo.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(20).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(25).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
-        });
 
-        boing.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(21).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-
-            }
-        });
-
-        cartoonito.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(22).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        spyke.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(23).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        iris.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(24).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        cielo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(25).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
         });
 
 
-        radioItaliaTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        radioItaliaTv.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(26).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(26).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
 
-        superTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        superTv.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(27).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(27).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        kisskiss.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(28).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        m2o.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(29).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        deejay.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(30).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        italia7.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(31).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        canale10.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(32).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        gold7.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(33).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        radioMonteCarlo.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(34).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        kisskiss.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        virginRadio.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(28).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(35).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        sanMarinoRtv.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(36).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        sanMarinoSport.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(37).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        sardegnaUno.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(38).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        m2o.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        retesoleLazio.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(29).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
+            try {
+                startChannel(finalListaCanali.get(39).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
 
+        });
+
+        r101.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(40).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
         });
 
-        deejay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        vh1.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(30).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(41).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        italia7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        la7.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(31).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(42).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        canale10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        la7d.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(32).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(43).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
-        });
 
-        gold7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(33).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        radioMonteCarlo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(34).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        virginRadio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(35).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        sanMarinoRtv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(36).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        sanMarinoSport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(37).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        sardegnaUno.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(38).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        retesoleLazio.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(39).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        r101.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(40).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        vh1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(41).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        la7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(42).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
-        });
-
-        la7d.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-
-                try {
-                    startChannel(finalListaCanali.get(43).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
-            }
         });
 
 
-        raiNews24.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        raiNews24.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(44).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(44).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        raiSport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        raiSport.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(45).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(45).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        sportitalia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        sportitalia.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(46).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(46).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        skyTg24.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        skyTg24.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(47).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(47).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        cine34.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        cine34.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(48).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(48).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
 
-        senatoTV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
+        senatoTV.setOnClickListener(arg0 -> {
 
-                try {
-                    startChannel(finalListaCanali.get(49).getString(JSON_URL));
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-
+            try {
+                startChannel(finalListaCanali.get(49).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
             }
+
         });
     }
 
-    private void startChannel(String url){
+    private void startChannel(String url) {
         Intent intent = new Intent(getBaseContext(), ChannelExoPlayer.class);
         intent.putExtra("URL", url);
         startActivity(intent);
     }
 
-    private void noInternet(Context context){
+    private void noInternet(Context context) {
         new AlertDialog.Builder(context)
                 .setTitle("Nessuna connessione internet")
                 .setMessage("Non è stato possibile scaricare la lista dei canali aggiornata")
 
-                .setNegativeButton("Ricarica", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        finalListaCanali = caricaCanali();
-                    }
-                })
+                .setNegativeButton("Ricarica", (dialog, which) -> finalListaCanali = caricaCanali())
 
                 .setPositiveButton(android.R.string.ok, null)
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
     }
 
-    private ArrayList<JSONObject> caricaCanali(){
+    private ArrayList<JSONObject> caricaCanali() {
 
         try {
             ExecutorService executor = Executors.newFixedThreadPool(2);
             Future<ArrayList<JSONObject>> process = executor.submit(new ChannelUpdaterCallable());
             return process.get();
         } catch (ExecutionException | InterruptedException e) {
-            e.printStackTrace();
+            Log.e("Parsing", "Errore durante il parsing del JSON");
         }
 
         return null;
