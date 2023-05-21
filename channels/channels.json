@@ -5,7 +5,7 @@
     },
     {
         "nome": "rai2",
-        "url": "http://stariptv.org:8080/hamza2022/123456/238620"
+        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(b6)/index.m3u8"
     },
     {
         "nome": "rai3",
@@ -29,7 +29,7 @@
     },
     {
         "nome": "tv8",
-        "url": "https://www.mytivu.it/Application/Channels/TV8.php"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
     },
     {
         "nome": "italia1",
@@ -101,7 +101,7 @@
     },
     {
         "nome": "cielo",
-        "url": "https://www.mytivu.it/Application/Channels/Cielo.php"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
     },
     {
         "nome": "radioItaliaTv",
@@ -109,7 +109,7 @@
     },
     {
         "nome": "superTv",
-        "url": "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/index_800_av-p.m3u8"
+        "url": "https://vimnitaly.akamaized.net/hls/live/2094034/super/master.m3u8"
     },
     {
         "nome": "kisskiss",
@@ -181,7 +181,7 @@
     },
     {
         "nome": "raiSport",
-        "url": "https://streamcdnr16-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raisportuno1/hls/raisport1_2400/chunklist.m3u8?baseuri=/raisportuno1/hls/&tstart=0&tend=1682138158&tk2=a888606482b5ddebd6f8603b39d758e76a5d81084bffc4837ff863e59ea2c925"
+        "url": "https://streamcdnr30-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raisportuno1/hls/raisport1_2400/chunklist.m3u8?baseuri=/raisportuno1/hls/&tstart=0&tend=1662581101&tk2=f355544621d0579548ea6a046b3dabb467a82373dea0b4f6a74914fabd9c093a"
     },
     {
         "nome": "sportitalia",
