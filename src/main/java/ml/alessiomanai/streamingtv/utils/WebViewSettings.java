@@ -14,7 +14,6 @@ public class WebViewSettings {
         finestra.clearHistory();
         finestra.clearMatches();
         finestra.clearSslPreferences();
-        finestra.getSettings().setAppCacheEnabled(true);
         finestra.getSettings().setJavaScriptEnabled(true);
         finestra.getSettings().setLoadsImagesAutomatically(true);
         finestra.getSettings().setMediaPlaybackRequiresUserGesture(false);

@@ -87,11 +87,11 @@
                     android:text="Rai News 24"></Button>
 
                 <Button
-                    android:id="@+id/sportitaliaMotoributton"
+                    android:id="@+id/raiSportbutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="SI Motori"></Button>
+                    android:text="Rai Sport"></Button>
 
             </LinearLayout>
 
@@ -288,11 +288,11 @@
                     android:text="Boing"></Button>
 
                 <Button
-                    android:id="@+id/paramountChannelbutton"
+                    android:id="@+id/twentySevenbutton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Paramount Channel"></Button>
+                    android:text="Twentyseven"></Button>
 
             </LinearLayout>
 

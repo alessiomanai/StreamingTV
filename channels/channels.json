@@ -9,7 +9,7 @@
     },
     {
         "nome": "rai3",
-        "url": "https://streamcdnb11-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raitre1/hls/playlist_ma.m3u8?baseuri=%2Fraitre1%2Fhls%2F&tstart=0&tend=1636896833&tof=86400&tk2=488fefa68296673b2564ef73fdcff8198ffe38b417e7e9f13386c20cc6ae5e6e"
+        "url": "http://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8"
     },
     {
         "nome": "tgcom24",
@@ -17,7 +17,7 @@
     },
     {
         "nome": "foodNetwork",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_6@1000854/master.m3u8?hdnts=st=1586086849~exp=1586173249~acl=/i/*~hmac=49ca8a624a617228910e6a0b491ab25e78ea7ab08c404c6800fc366e15a03146&mux_audio=true"
+        "url": "http://stariptv.org:8080/hamza2022/123456/238687"
     },
     {
         "nome": "videolina",
@@ -29,7 +29,7 @@
     },
     {
         "nome": "tv8",
-        "url": "https://www.mytivu.it/Application/Channels/TV8.php"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
     },
     {
         "nome": "italia1",
@@ -65,7 +65,7 @@
     },
     {
         "nome": "motorTrend",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_1@810993/master.m3u8?hdnts=st=1559845194~exp=1559931594~acl=/*~hmac=877e074ac091df4a9d3406b63474da090678d4eef65c21489d443b94d4de7087&mux_audio=true"
+        "url": "http://stariptv.org:8080/hamza2022/123456/238698"
     },
     {
         "nome": "realTime",
@@ -80,8 +80,8 @@
         "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_3@810997/master.m3u8?hdnts=st=1585746893~exp=1585833293~acl=/i/*~hmac=7aa28aab591fe6ddf8d0480b4f202d3536f6f5b26dedf9d944c35b6320950ca4&mux_audio=true"
     },
     {
-        "nome": "paramountChannel",
-        "url": "http://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@195657/index_2500_av-p.m3u8"
+        "nome": "twentySeven",
+        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ts)/index.m3u8"
     },
     {
         "nome": "boing",
@@ -101,15 +101,15 @@
     },
     {
         "nome": "cielo",
-        "url": "https://www.mytivu.it/Application/Channels/Cielo.php"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
     },
     {
         "nome": "radioItaliaTv",
-        "url": "http://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/index_384x256_av-p.m3u8?sd=10&rebase=on"
+        "url": "https://radioitaliasmi.akamaized.net/hls/live/2093120/RISMI/master.m3u8"
     },
     {
         "nome": "superTv",
-        "url": "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/index_800_av-p.m3u8"
+        "url": "https://vimnitaly.akamaized.net/hls/live/2094034/super/master.m3u8"
     },
     {
         "nome": "kisskiss",
@@ -117,11 +117,11 @@
     },
     {
         "nome": "m2o",
-        "url": "http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8"
+        "url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S62628868/uhdWBlkC1AoO/playlist.m3u8"
     },
     {
         "nome": "deejay",
-        "url": "https://deejay-tv-lh.akamaized.net/i/DeejayTv_1@129866/master.m3u8"
+        "url": "https://4c4b867c89244861ac216426883d1ad0.msvdn.net/live/S85984808/sMO0tz9Sr2Rk/playlist.m3u8"
     },
     {
         "nome": "italia7",
@@ -153,7 +153,7 @@
     },
     {
         "nome": "sardegnaUno",
-        "url": "https://59d7d6f47d7fc.streamlock.net/sardegnauno/sardegnauno/playlist.m3u8"
+        "url": "https://stream-09.dc3.dailymotion.com/sec(OZ0ERGOH4oE-_Xr-zBQ5vylKnRdLBsaLX_wD-8wZICCcQH7DhQ55bgzbu7QhJs6B)/dm/3/x893du6/d/live-2.m3u8"
     },
     {
         "nome": "retesoleLazio",
@@ -161,7 +161,7 @@
     },
     {
         "nome": "r101",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8"
+        "url": "https://live2-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8"
     },
     {
         "nome": "vh1",
@@ -176,20 +176,20 @@
         "url": "https://d15umi5iaezxgx.cloudfront.net/LA7D/CLN/HLS-B/Live.m3u8"
     },
     {
-        "nome": "raiSport",
+        "nome": "raiNews24",
         "url": "https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8"
     },
     {
-        "nome": "sportitaliaMotori",
-        "url": "https://di-l1o0e8cu.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8"
+        "nome": "raiSport",
+        "url": "https://streamcdnr30-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raisportuno1/hls/raisport1_2400/chunklist.m3u8?baseuri=/raisportuno1/hls/&tstart=0&tend=1662581101&tk2=f355544621d0579548ea6a046b3dabb467a82373dea0b4f6a74914fabd9c093a"
     },
     {
         "nome": "sportitalia",
-        "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/sihd_480p/chunklist.m3u8"
+        "url": "https://sportitaliaamd.akamaized.net/video_0/Sportitalia/hls/B4DF7411EF2D38AD98B7D9FA9612B9753F214EFA/index.m3u8"
     },
     {
         "nome": "skyTg24",
-        "url": "https://www.mytivu.it/Application/Channels/SkyTG24.php"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
     },
     {
         "nome": "cine34",

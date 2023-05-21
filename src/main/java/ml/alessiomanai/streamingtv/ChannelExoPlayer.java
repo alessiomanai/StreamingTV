@@ -4,9 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.MediaItem;
+import com.google.android.exoplayer2.PlaybackException;
+import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.ui.StyledPlayerView;
 
 
@@ -27,14 +30,44 @@ public class ChannelExoPlayer extends AppCompatActivity {
 
         MediaItem mediaItem = MediaItem.fromUri(intent.getStringExtra("URL"));
 
-        player.setMediaItem(mediaItem);
-        player.prepare();
-        player.play();
+        play(mediaItem);
+
+        player.addListener(new Player.Listener() {
+            @Override
+            public void onPlaybackStateChanged(int playbackState) {
+                if (playbackState == Player.STATE_ENDED) {
+                    stop();
+                    play(mediaItem);
+                }
+            }
+
+            @Override
+            public void onPlayerError(PlaybackException error) {
+                stop();
+                play(mediaItem);
+            }
+        });
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         player.release();
+    }
+
+    void stop() {
+        player.setPlayWhenReady(false);
+        player.stop();
+        player.seekTo(0);
+    }
+
+    void play(MediaItem mediaItem){
+        player.setMediaItem(mediaItem);
+        player.prepare();
+        player.play();
+        player.setPlayWhenReady(true);
     }
 }
