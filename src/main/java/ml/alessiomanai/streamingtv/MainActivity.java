@@ -3,6 +3,7 @@ package ml.alessiomanai.streamingtv;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -20,6 +21,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 import ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable;
+import ml.alessiomanai.streamingtv.connessione.CheckUpdatesCallable;
+import ml.alessiomanai.streamingtv.utils.StreamingTVConstants;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -617,11 +620,33 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
+    private void aggiornamentoApplicazione(Context context) {
+        new AlertDialog.Builder(context)
+                .setTitle("Nuova versione disponibile")
+                .setMessage("Alla pagina dello sviluppatore è disponibile una versione aggiornata dell'applicazione")
+
+                .setNegativeButton("Scarica", (dialog, which) -> {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(StreamingTVConstants.LATEST_VERSION));
+                    startActivity(intent);
+                })
+
+                .setPositiveButton(android.R.string.ok, null)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .show();
+    }
+
     private ArrayList<JSONObject> caricaCanali() {
 
         try {
             ExecutorService executor = Executors.newFixedThreadPool(2);
             Future<ArrayList<JSONObject>> process = executor.submit(new ChannelUpdaterCallable());
+
+            Future<Boolean> checkUpdateFuture = executor.submit(new CheckUpdatesCallable());
+
+            if(checkUpdateFuture.get()){
+                aggiornamentoApplicazione(this);
+            }
+
             return process.get();
         } catch (ExecutionException | InterruptedException e) {
             Log.e("Parsing", "Errore durante il parsing del JSON");
