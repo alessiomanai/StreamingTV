@@ -6,11 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import com.google.android.exoplayer2.ExoPlayer;
-import com.google.android.exoplayer2.MediaItem;
-import com.google.android.exoplayer2.PlaybackException;
-import com.google.android.exoplayer2.Player;
-import com.google.android.exoplayer2.ui.StyledPlayerView;
+import androidx.media3.common.MediaItem;
+import androidx.media3.common.PlaybackException;
+import androidx.media3.common.Player;
+import androidx.media3.exoplayer.ExoPlayer;
+import androidx.media3.ui.PlayerView;
 
 
 public class ChannelExoPlayer extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class ChannelExoPlayer extends AppCompatActivity {
         setContentView(R.layout.activity_channel_exo_player);
 
         Intent intent = getIntent();
-        StyledPlayerView playerView = findViewById(R.id.playerView);
+        PlayerView playerView = findViewById(R.id.playerView);
 
         player = new ExoPlayer.Builder(this).build();
         playerView.setPlayer(player);
