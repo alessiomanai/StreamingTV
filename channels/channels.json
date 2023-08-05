@@ -17,7 +17,7 @@
     },
     {
         "nome": "foodNetwork",
-        "url": "http://stariptv.org:8080/hamza2022/123456/238687"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/FoodNetwork"
     },
     {
         "nome": "videolina",
@@ -41,7 +41,7 @@
     },
     {
         "nome": "giallo",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_2@810996/master.m3u8?hdnts=st=1564227924~exp=1564314324~acl=/*~hmac=98bf7f8b6e1d65254efde4c3350f77d0e01d778d5e86abffd3ff244df230faad&mux_audio=true"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/Giallo"
     },
     {
         "nome": "rete4",
@@ -65,19 +65,19 @@
     },
     {
         "nome": "motorTrend",
-        "url": "http://stariptv.org:8080/hamza2022/123456/238698"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/MotorTrend"
     },
     {
         "nome": "realTime",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_4@810998/master.m3u8?hdnts=st=1564228002~exp=1564314402~acl=/*~hmac=6c0b77c0af71417fd823ef483a0d15c72e267308b83fdcb0e1b2228dba9dd703&mux_audio=true"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/RealTime"
     },
     {
         "nome": "dMax",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_5@825063/master.m3u8"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/DMAX"
     },
     {
         "nome": "nove",
-        "url": "https://sbshdlu5-lh.akamaihd.net/i/sbshdl_3@810997/master.m3u8?hdnts=st=1585746893~exp=1585833293~acl=/i/*~hmac=7aa28aab591fe6ddf8d0480b4f202d3536f6f5b26dedf9d944c35b6320950ca4&mux_audio=true"
+        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/Nove"
     },
     {
         "nome": "twentySeven",
@@ -113,7 +113,7 @@
     },
     {
         "nome": "kisskiss",
-        "url": "http://wma05.fluidstream.net/KissKissTV/KissKissTV.stream/chunklist_w573387836.m3u8"
+        "url": "https://kk.fluid.stream/KKMulti/smil:KissKissTV.smil/playlist.m3u8?FLID=1"
     },
     {
         "nome": "m2o",
@@ -133,7 +133,7 @@
     },
     {
         "nome": "gold7",
-        "url": "https://stream2.xdevel.com/video0s86-21/stream/playlist_dvr.m3u8"
+        "url": "https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8"
     },
     {
         "nome": "radioMonteCarlo",
