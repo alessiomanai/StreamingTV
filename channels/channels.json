@@ -181,11 +181,11 @@
     },
     {
         "nome": "raiSport",
-        "url": "https://streamcdnr30-8e7439fdb1694c8da3a0fd63e4dda518.msvdn.net/raisportuno1/hls/raisport1_2400/chunklist.m3u8?baseuri=/raisportuno1/hls/&tstart=0&tend=1662581101&tk2=f355544621d0579548ea6a046b3dabb467a82373dea0b4f6a74914fabd9c093a"
+        "url": "https://di-kzbhv8pw.vo.lswcdn.net/sportitalia/smil:sisolocalcio.smil/playlist.m3u8"
     },
     {
         "nome": "sportitalia",
-        "url": "https://sportitaliaamd.akamaized.net/video_0/Sportitalia/hls/B4DF7411EF2D38AD98B7D9FA9612B9753F214EFA/index.m3u8"
+        "url": "https://di-g7ij0rwh.vo.lswcdn.net/sportitalia/sihd/playlist.m3u8"
     },
     {
         "nome": "skyTg24",
