@@ -13,7 +13,7 @@
     },
     {
         "nome": "tgcom24",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kf)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/index.m3u8"
     },
     {
         "nome": "foodNetwork",
@@ -21,11 +21,11 @@
     },
     {
         "nome": "videolina",
-        "url": "http://livestreaming.videolina.it/live/Videolina/chunklist_w1548194757.m3u8"
+        "url": "https://streamcdnm3-7e1cc2454f2242afabe05cc0a2f483cd.msvdn.net/videolina/videolina_live/videolina_live/chunks.m3u8"
     },
     {
         "nome": "canale5",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/index.m3u8"
     },
     {
         "nome": "tv8",
@@ -33,11 +33,11 @@
     },
     {
         "nome": "italia1",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i1)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/index.m3u8"
     },
     {
         "nome": "topcrime",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(lt)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/index.m3u8"
     },
     {
         "nome": "giallo",
@@ -45,23 +45,23 @@
     },
     {
         "nome": "rete4",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(r4)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/index.m3u8"
     },
     {
         "nome": "mediasetExtra",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kq)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/index.m3u8"
     },
     {
         "nome": "mediaset20",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(lb)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/index.m3u8"
     },
     {
         "nome": "italia2",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(i2)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/index.m3u8"
     },
     {
         "nome": "la5",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ka)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/index.m3u8"
     },
     {
         "nome": "motorTrend",
@@ -81,15 +81,15 @@
     },
     {
         "nome": "twentySeven",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ts)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/index.m3u8"
     },
     {
         "nome": "boing",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(kb)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/index.m3u8"
     },
     {
         "nome": "cartoonito",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(la)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/index.m3u8"
     },
     {
         "nome": "spyke",
@@ -97,15 +97,15 @@
     },
     {
         "nome": "iris",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(ki)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/index.m3u8"
     },
     {
         "nome": "cielo",
-        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1701861650~exp=1765449000~acl=/*~hmac=84c9f3f71e57b13c3a67afa8b29a8591ea9ed84bf786524399545d94be1ec04d"
     },
     {
         "nome": "radioItaliaTv",
-        "url": "https://radioitaliasmi.akamaized.net/hls/live/2093120/RISMI/master.m3u8"
+        "url": "https://radioitaliatv.akamaized.net/hls/live/2093117/RadioitaliaTV/master.m3u8"
     },
     {
         "nome": "superTv",
@@ -129,11 +129,11 @@
     },
     {
         "nome": "canale10",
-        "url": "http://37.187.142.147:1935/ch10live/high.stream/chunklist_w543110031.m3u8"
+        "url": "http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8"
     },
     {
         "nome": "gold7",
-        "url": "https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8"
+        "url": "https://stream2.xdevel.com/video0s86-21/stream/playlist.m3u8"
     },
     {
         "nome": "radioMonteCarlo",
@@ -153,11 +153,11 @@
     },
     {
         "nome": "sardegnaUno",
-        "url": "https://stream-09.dc3.dailymotion.com/sec(OZ0ERGOH4oE-_Xr-zBQ5vylKnRdLBsaLX_wD-8wZICCcQH7DhQ55bgzbu7QhJs6B)/dm/3/x893du6/d/live-2.m3u8"
+        "url": "https://5bb65e9de3fdf.streamlock.net/live/_definst_/Sardegna1/playlist.m3u8"
     },
     {
         "nome": "retesoleLazio",
-        "url": "http://5c389faa13be3.streamlock.net:1935/8058/8058/playlist.m3u8"
+        "url": "https://5926fc9c7c5b2.streamlock.net/9332/9332/playlist.m3u8"
     },
     {
         "nome": "r101",
@@ -193,11 +193,15 @@
     },
     {
         "nome": "cine34",
-        "url": "https://live2.msf.cdn.mediaset.net/content/hls_h0_clr_vos/live/channel(b6)/index.m3u8"
+        "url": "https://live02-seg.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/index.m3u8"
     },
     {
         "nome": "senatoTV",
         "url": "https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8?video_id=13440&uuid=&channel_name=senato_webtv1&detected_delivery_method=hls"
+    },
+    {
+        "nome": "uno4",
+        "url": "https://cdn99-ita.azotosolutions.com:8443/cdnedge8/smil:live2.smil/chunklist_w85599377_b2500000_slen.m3u8"
     }
 
 ]
