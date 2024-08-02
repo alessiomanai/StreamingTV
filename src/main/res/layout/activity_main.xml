@@ -473,6 +473,28 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/canaleItaliaButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Canale Italia"></Button>
+
+                <Button
+                    android:id="@+id/uno4Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Uno4"></Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
                     android:id="@+id/canale10Button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

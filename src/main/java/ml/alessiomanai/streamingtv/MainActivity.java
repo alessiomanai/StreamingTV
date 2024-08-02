@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Button topcrime, rai1, radioMonteCarlo, virginRadio, sanMarinoRtv, sanMarinoSport;
     Button giallo, superTv, kisskiss, m2o, deejay, canale10, gold7, sardegnaUno, retesoleLazio;
     Button rete4, mediasetExtra, mediaset20, italia2, la5, motorTrend, realTime, sportitalia, dMax, nove;
-    Button iris, cielo, boing, cartoonito, twentySeven, spyke, tgcom24, italia7;
+    Button iris, cielo, boing, cartoonito, twentySeven, spyke, tgcom24, italia7, uno4, canaleItalia;
     private ArrayList<JSONObject> finalListaCanali;
 
     @Override
@@ -94,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
         skyTg24 = findViewById(R.id.skytg24Button);
         senatoTV = findViewById(R.id.senatoTVButton);
         cine34 = findViewById(R.id.cine34Button);
+        uno4 = findViewById(R.id.uno4Button);
+        canaleItalia = findViewById(R.id.canaleItaliaButton);
 
         finalListaCanali = caricaCanali();
 
@@ -595,6 +597,26 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 startChannel(finalListaCanali.get(49).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        uno4.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(50).getString(JSON_URL));
+            } catch (JSONException | IndexOutOfBoundsException e) {
+                Log.e("Channel", "Errore durante l'avvio del canale");
+            }
+
+        });
+
+        canaleItalia.setOnClickListener(arg0 -> {
+
+            try {
+                startChannel(finalListaCanali.get(51).getString(JSON_URL));
             } catch (JSONException | IndexOutOfBoundsException e) {
                 Log.e("Channel", "Errore durante l'avvio del canale");
             }
