@@ -29,7 +29,7 @@
     },
     {
         "nome": "tv8",
-        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11223/tv8web/master.m3u8?hdnea=st=1701861650~exp=1765449000~acl=/*~hmac=84c9f3f71e57b13c3a67afa8b29a8591ea9ed84bf786524399545d94be1ec04d"
     },
     {
         "nome": "italia1",
@@ -129,7 +129,7 @@
     },
     {
         "nome": "canale10",
-        "url": "http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8"
+        "url": "https://nrvideo1.newradio.it:1936/desxcerbht/desxcerbht/chunklist_w1615832122.m3u8"
     },
     {
         "nome": "gold7",
@@ -201,7 +201,11 @@
     },
     {
         "nome": "uno4",
-        "url": "https://cdn99-ita.azotosolutions.com:8443/cdnedge8/smil:live2.smil/chunklist_w85599377_b2500000_slen.m3u8"
+        "url": "https://cdn.uno4.it/index.m3u8"
+    },
+    {
+        "nome": "canaleItalia",
+        "url": "https://liveac115.b-cdn.net/canale1.smil/chunklist_b1100000.m3u8"
     }
 
 ]
