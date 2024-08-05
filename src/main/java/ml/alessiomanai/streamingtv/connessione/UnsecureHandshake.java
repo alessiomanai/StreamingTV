@@ -1,5 +1,7 @@
 package ml.alessiomanai.streamingtv.connessione;
 
+import android.util.Log;
+
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 
@@ -38,7 +40,8 @@ public class UnsecureHandshake {
                     return true;
                 }
             });
-        } catch (Exception ignored) {
+        } catch (Exception exception) {
+            Log.e("UnsecureHandshake", "Errore generico", exception);
         }
     }
 }
