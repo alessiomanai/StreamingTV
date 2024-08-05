@@ -18,7 +18,7 @@ SourceForge: https://streaming-tv-italia.sourceforge.io/
 	
 	StreamingTV - A simple app to watch webTV on Fire TV
 	
-	Copyright (C) 2020-2023  Alessio Manai
+	Copyright (C) 2020-2024  Alessio Manai
 
  	This program is free software: you can redistribute it and/or modify
  	it under the terms of the GNU General Public License as published by

@@ -1,7 +1,6 @@
 package ml.alessiomanai.streamingtv;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -20,6 +19,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+import ml.alessiomanai.streamingtv.canali.UnsecureChannelPlayer;
 import ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable;
 import ml.alessiomanai.streamingtv.connessione.CheckUpdatesCallable;
 import ml.alessiomanai.streamingtv.utils.StreamingTVConstants;
@@ -606,7 +606,7 @@ public class MainActivity extends AppCompatActivity {
         uno4.setOnClickListener(arg0 -> {
 
             try {
-                startChannel(finalListaCanali.get(50).getString(JSON_URL));
+                startChannelUnsecure(finalListaCanali.get(50).getString(JSON_URL));
             } catch (JSONException | IndexOutOfBoundsException e) {
                 Log.e("Channel", "Errore durante l'avvio del canale");
             }
@@ -626,6 +626,12 @@ public class MainActivity extends AppCompatActivity {
 
     private void startChannel(String url) {
         Intent intent = new Intent(getBaseContext(), ChannelExoPlayer.class);
+        intent.putExtra("URL", url);
+        startActivity(intent);
+    }
+
+    private void startChannelUnsecure(String url) {
+        Intent intent = new Intent(getBaseContext(), UnsecureChannelPlayer.class);
         intent.putExtra("URL", url);
         startActivity(intent);
     }

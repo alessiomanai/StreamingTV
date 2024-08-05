@@ -15,7 +15,7 @@
         <activity
             android:name=".ChannelExoPlayer"
             android:exported="false" />
-        <activity android:name=".canali.ChannelInterface" />
+        <activity android:name=".canali.UnsecureChannelPlayer" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

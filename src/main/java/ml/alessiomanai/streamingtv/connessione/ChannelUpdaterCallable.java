@@ -27,7 +27,7 @@ public class ChannelUpdaterCallable implements Callable<ArrayList<JSONObject>> {
             }
 
         } catch (JSONException e) {
-            e.printStackTrace();
+            Log.e("PARSING ERROR", "Errore durante il parsing del JSON", e);
         }
 
         return list;
