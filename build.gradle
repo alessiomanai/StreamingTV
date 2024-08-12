@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "ml.alessiomanai.streamingtv"
         minSdkVersion 21
-        targetSdk 34
+        targetSdkVersion 35
         versionCode 18
         versionName "1.3.1"
 
