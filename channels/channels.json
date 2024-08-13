@@ -17,7 +17,7 @@
     },
     {
         "nome": "foodNetwork",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/FoodNetwork"
+        "url": "https://amg16146-wbdi-amg16146c3-samsung-it-1836.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-foodnetwork-samsungit/playlist.m3u8"
     },
     {
         "nome": "videolina",
@@ -41,7 +41,7 @@
     },
     {
         "nome": "giallo",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/Giallo"
+        "url": "https://amg16146-wbdi-amg16146c5-samsung-it-1838.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-giallo-samsungit/playlist.m3u8"
     },
     {
         "nome": "rete4",
@@ -65,19 +65,19 @@
     },
     {
         "nome": "motorTrend",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/MotorTrend"
+        "url": "https://amg16146-wbdi-amg16146c10-samsung-it-1843.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-motortrend-samsungit/playlist.m3u8"
     },
     {
         "nome": "realTime",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/RealTime"
+        "url": "https://amg16146-wbdi-amg16146c2-samsung-it-1835.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-realtime-samsungit/playlist.m3u8"
     },
     {
         "nome": "dMax",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/DMAX"
+        "url": "https://amg16146-wbdi-amg16146c8-samsung-it-1841.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-dmax-samsungit/playlist.m3u8"
     },
     {
         "nome": "nove",
-        "url": "https://freechannels.worldtvlive.eu/api/v1/channels/Discovery/Nove"
+        "url": "https://amg16146-wbdi-amg16146c1-samsung-it-1831.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-nove-samsungit/playlist.m3u8"
     },
     {
         "nome": "twentySeven",
@@ -93,7 +93,7 @@
     },
     {
         "nome": "spyke",
-        "url": "https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@829515/master.m3u8"
+        "url": "https://amg16146-wbdi-amg16146c4-samsung-it-1837.playouts.now.amagi.tv/playlist/amg16146-warnerbrosdiscoveryitalia-warnertv-samsungit/playlist.m3u8"
     },
     {
         "nome": "iris",
@@ -101,7 +101,7 @@
     },
     {
         "nome": "cielo",
-        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1701861650~exp=1765449000~acl=/*~hmac=84c9f3f71e57b13c3a67afa8b29a8591ea9ed84bf786524399545d94be1ec04d"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnea=st=1701861650~exp=1765449000~acl=/*~hmac=84c9f3f71e57b13c3a67afa8b29a8591ea9ed84bf786524399545d94be1ec04d"
     },
     {
         "nome": "radioItaliaTv",
@@ -189,7 +189,7 @@
     },
     {
         "nome": "skyTg24",
-        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnea=st=1639498341~exp=1702463400~acl=/*~hmac=c3c4c2de19ff0df4b4bb20587ce59af5232eadab2995f445b7506525413805dd"
+        "url": "https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1701861650~exp=1765449000~acl=/*~hmac=84c9f3f71e57b13c3a67afa8b29a8591ea9ed84bf786524399545d94be1ec04d"
     },
     {
         "nome": "cine34",
