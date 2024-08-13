@@ -125,7 +125,7 @@
     },
     {
         "nome": "italia7",
-        "url": "http://151.0.207.99:1935/italia7/italia7/playlist.m3u8"
+        "url": "https://streaming.softwarecreation.it/Italia7/Italia7/playlist.m3u8"
     },
     {
         "nome": "canale10",
@@ -133,7 +133,7 @@
     },
     {
         "nome": "gold7",
-        "url": "https://stream2.xdevel.com/video0s86-21/stream/playlist.m3u8"
+        "url": "https://goldtv.grupposciscione.knoxstreaming.com/live/masterpl.m3u8"
     },
     {
         "nome": "radioMonteCarlo",
@@ -153,11 +153,11 @@
     },
     {
         "nome": "sardegnaUno",
-        "url": "https://5bb65e9de3fdf.streamlock.net/live/_definst_/Sardegna1/playlist.m3u8"
+        "url": "https://7e1cc2454f2242afabe05cc0a2f483cd.msvdn.net/live/S30721796/ZS3Xu8mn5f0J/playlist.m3u8"
     },
     {
         "nome": "retesoleLazio",
-        "url": "https://5926fc9c7c5b2.streamlock.net/9332/9332/playlist.m3u8"
+        "url": "https://laziotv.grupposciscione.knoxstreaming.com/live/masterpl.m3u8"
     },
     {
         "nome": "r101",
