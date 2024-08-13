@@ -1,14 +1,27 @@
 @startuml
-class ml.alessiomanai.streamingtv.utils.WebViewSettings {
-+ {static} WebView doSettings(WebView)
+class ml.alessiomanai.streamingtv.connessione.UnsecureHandshake {
++ {static} void handleSSLHandshake()
 }
+
+class ml.alessiomanai.streamingtv.connessione.CheckUpdatesCallable {
+- String getLatestVersion()
++ Boolean call()
+}
+
+class ml.alessiomanai.streamingtv.utils.StreamingTVConstants {
++ {static} String LATEST_VERSION
+}
+
 class ml.alessiomanai.streamingtv.connessione.WebRequest {
 + {static} int GET
 + {static} int POST
 + String makeWebServiceCall(String,int)
 + String makeWebServiceCall(String,int,HashMap<String,String>)
 }
+
+
 class ml.alessiomanai.streamingtv.MainActivity {
+~ String JSON_URL
 ~ Button foodNetwork
 ~ Button radioItaliaTv
 ~ Button videolina
@@ -19,38 +32,39 @@ class ml.alessiomanai.streamingtv.MainActivity {
 ~ Button giallo
 ~ Button rete4
 ~ Button iris
-~ String JSON_URL
 - ArrayList<JSONObject> finalListaCanali
 # void onCreate(Bundle)
 - void startChannel(String)
+- void startChannelUnsecure(String)
 - void noInternet(Context)
+- void aggiornamentoApplicazione(Context)
 - ArrayList<JSONObject> caricaCanali()
 }
+
+
 class ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable {
 + ArrayList<JSONObject> getAssetJsonData(String)
 + ArrayList<JSONObject> call()
 }
+
 class ml.alessiomanai.streamingtv.ChannelExoPlayer {
 - ExoPlayer player
 # void onCreate(Bundle)
 # void onDestroy()
+~ void stop()
+~ void play(MediaItem)
 }
-class ml.alessiomanai.streamingtv.ExampleInstrumentedTest {
-+ void useAppContext()
-}
-class ml.alessiomanai.streamingtv.utils.M3u8Reader {
-+ {static} String getHtmlReader(String)
-}
-class ml.alessiomanai.streamingtv.ExampleUnitTest {
-+ void addition_isCorrect()
-}
-class ml.alessiomanai.streamingtv.canali.ChannelInterface {
+
+
+class ml.alessiomanai.streamingtv.canali.UnsecureChannelPlayer {
 # void onCreate(Bundle)
 }
 
 
+
+java.util.concurrent.Callable <|.. ml.alessiomanai.streamingtv.connessione.CheckUpdatesCallable
 androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.MainActivity
 java.util.concurrent.Callable <|.. ml.alessiomanai.streamingtv.connessione.ChannelUpdaterCallable
 androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.ChannelExoPlayer
-androidx.appcompat.app.AppCompatActivity <|-- ml.alessiomanai.streamingtv.canali.ChannelInterface
+ml.alessiomanai.streamingtv.ChannelExoPlayer <|-- ml.alessiomanai.streamingtv.canali.UnsecureChannelPlayer
 @enduml
