@@ -31,6 +31,7 @@ import ml.alessiomanai.streamingtv.utils.StreamingTVConstants;
 public class MainActivity extends AppCompatActivity {
 
     final String JSON_URL = "url";
+    final String JSON_NAME = "nome";
     Button foodNetwork;
     Button radioItaliaTv;
     Button videolina;
@@ -112,6 +113,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (finalListaCanali == null || finalListaCanali.isEmpty()) {
             noInternet(this);
+        } else {
+            updateChannelName();
         }
 
         rai1.setOnClickListener(arg0 -> {
@@ -693,4 +696,66 @@ public class MainActivity extends AppCompatActivity {
 
         return null;
     }
+
+    private void updateChannelName(){
+
+        try {
+            rai1.setText(finalListaCanali.get(0).getString(JSON_NAME));
+            rai2.setText(finalListaCanali.get(1).getString(JSON_NAME));
+            rai3.setText(finalListaCanali.get(2).getString(JSON_NAME));
+            tgcom24.setText(finalListaCanali.get(3).getString(JSON_NAME));
+            foodNetwork.setText(finalListaCanali.get(4).getString(JSON_NAME));
+            videolina.setText(finalListaCanali.get(5).getString(JSON_NAME));
+            canale5.setText(finalListaCanali.get(6).getString(JSON_NAME));
+            tv8.setText(finalListaCanali.get(7).getString(JSON_NAME));
+            italia1.setText(finalListaCanali.get(8).getString(JSON_NAME));
+            topcrime.setText(finalListaCanali.get(9).getString(JSON_NAME));
+            giallo.setText(finalListaCanali.get(10).getString(JSON_NAME));
+            rete4.setText(finalListaCanali.get(11).getString(JSON_NAME));
+            mediasetExtra.setText(finalListaCanali.get(12).getString(JSON_NAME));
+            mediaset20.setText(finalListaCanali.get(13).getString(JSON_NAME));
+            italia2.setText(finalListaCanali.get(14).getString(JSON_NAME));
+            la5.setText(finalListaCanali.get(15).getString(JSON_NAME));
+            motorTrend.setText(finalListaCanali.get(16).getString(JSON_NAME));
+            realTime.setText(finalListaCanali.get(17).getString(JSON_NAME));
+            dMax.setText(finalListaCanali.get(18).getString(JSON_NAME));
+            nove.setText(finalListaCanali.get(19).getString(JSON_NAME));
+            twentySeven.setText(finalListaCanali.get(20).getString(JSON_NAME));
+            boing.setText(finalListaCanali.get(21).getString(JSON_NAME));
+            cartoonito.setText(finalListaCanali.get(22).getString(JSON_NAME));
+            spyke.setText(finalListaCanali.get(23).getString(JSON_NAME));
+            iris.setText(finalListaCanali.get(24).getString(JSON_NAME));
+            cielo.setText(finalListaCanali.get(25).getString(JSON_NAME));
+            radioItaliaTv.setText(finalListaCanali.get(26).getString(JSON_NAME));
+            superTv.setText(finalListaCanali.get(27).getString(JSON_NAME));
+            kisskiss.setText(finalListaCanali.get(28).getString(JSON_NAME));
+            m2o.setText(finalListaCanali.get(29).getString(JSON_NAME));
+            deejay.setText(finalListaCanali.get(30).getString(JSON_NAME));
+            italia7.setText(finalListaCanali.get(31).getString(JSON_NAME));
+            canale10.setText(finalListaCanali.get(32).getString(JSON_NAME));
+            gold7.setText(finalListaCanali.get(33).getString(JSON_NAME));
+            radioMonteCarlo.setText(finalListaCanali.get(34).getString(JSON_NAME));
+            virginRadio.setText(finalListaCanali.get(35).getString(JSON_NAME));
+            sanMarinoRtv.setText(finalListaCanali.get(36).getString(JSON_NAME));
+            sanMarinoSport.setText(finalListaCanali.get(37).getString(JSON_NAME));
+            sardegnaUno.setText(finalListaCanali.get(38).getString(JSON_NAME));
+            retesoleLazio.setText(finalListaCanali.get(39).getString(JSON_NAME));
+            r101.setText(finalListaCanali.get(40).getString(JSON_NAME));
+            vh1.setText(finalListaCanali.get(41).getString(JSON_NAME));
+            la7.setText(finalListaCanali.get(42).getString(JSON_NAME));
+            la7d.setText(finalListaCanali.get(43).getString(JSON_NAME));
+            raiNews24.setText(finalListaCanali.get(44).getString(JSON_NAME));
+            raiSport.setText(finalListaCanali.get(45).getString(JSON_NAME));
+            sportitalia.setText(finalListaCanali.get(46).getString(JSON_NAME));
+            skyTg24.setText(finalListaCanali.get(47).getString(JSON_NAME));
+            cine34.setText(finalListaCanali.get(48).getString(JSON_NAME));
+            senatoTV.setText(finalListaCanali.get(49).getString(JSON_NAME));
+            uno4.setText(finalListaCanali.get(50).getString(JSON_NAME));
+            canaleItalia.setText(finalListaCanali.get(51).getString(JSON_NAME));
+        } catch (JSONException ex){
+            Log.e("JSONException", "Errore nel parsing dei nomi canali");
+        }
+
+    }
+
 }
